@@ -1,0 +1,21 @@
+/* Changement du modèle de boîte */
+
+* {
+box-sizing : border-box;
+}
+
+
+/* Changement du font-size pour que 1rem = 10px, définition d'une couleur, d'une font-family et d'une line-height standard pour tous les éléments */
+:root {
+font-size: 62.5%;
+font-family : var(--fontFamily), 'Roboto', 'Helvetica', 'Arial', sans-serif;
+line-height : 1.5;
+color : var(--colorSecondary);
+}
+
+/*Rendre flexible et adaptable les images*/
+img {
+display : block;
+max-width : 100%;
+height : auto;
+}
