@@ -1,20 +1,27 @@
-/* Définition de l'utilisation d'une variable */
 :root{
---variableRandom : value;
 
 /*DEFINE THE HUE OF THE PRIMARY AND SECONDARY COLORS*/
 --huePrimary : 148;
 --hueSecondary : 248;
 
+/*DEFINE THE SATURATION OF THE PRIMARY AND SECONDARY COLORS*/
+--saturationPrimary : 100%;
+--saturationSecondary : 100%;
+--saturationGrey : 12%;
+
+/*DEFINE THE LUMINANCE OF THE PRIMARY AND SECONDARY COLORS*/
+--luminancePrimary : 50;
+--luminanceSecondary : 50;
+
 /*DEFINE A BASE THAT THE FRAMEWORK WILL WORK WITH */
---basePrimary : var(--huePrimary), 100%;
---baseSecondary : var(--hueSecondary), 100%;
---baseGrey: var(--huePrimary), 12%;
+--basePrimary : var(--huePrimary), var(--saturationPrimary);
+--baseSecondary : var(--hueSecondary), var(--saturationSecondary);
+--baseGrey: var(--huePrimary), var(--saturationGrey);
 
 
 /*DEFINE THE COLOR PALETTE AND THE GREY PALETTE AND THEIR LUMINANCE*/
---colorPrimary : hsl(var(--basePrimary), 50%);
---colorSecondary : hsl(var(--baseSecondary), 50%);
+--colorPrimary : hsl(var(--basePrimary), var(luminancePrimary)%);
+--colorSecondary : hsl(var(--baseSecondary), var(luminanceSecondary)%);
 --colorWhite : hsl(var(--basePrimary), 99%);
 --colorBlack : hsl(var(--baseGrey));
 --colorBlackTransparent : hsla(var(--baseGrey),0.7);
@@ -23,10 +30,14 @@
 --colorMediumGrey : hsl(var(--baseGrey),91%);
 --colorDarkGrey : hsl(var(--baseGrey),86%);
 
+/*DEFINE THE VARIOUS STATES*/
+--colorPrimaryHover : hsl(var(--basePrimary), calc(var(luminancePrimary)-10)%);
+--colorPrimaryActive : hsl(var(--basePrimary), calc(var(luminancePrimary)-20)%);
+--colorSecondaryHover : hsl(var(--baseSecondary), calc(var(luminanceSecondary)-10)%);
+--colorSecondaryActive : hsl(var(--baseSecondary), calc(var(luminanceSecondary)-20)%);
 
 
-
-/*DEFINE THE SPACING*/
+/*DEFINE THE POTENTIAL USABLE UNITS*/
 --xxs : 0.2rem;
 --xs : 0.4rem;
 --s : 0.8rem;
@@ -53,4 +64,10 @@
 --size6 : 1.6rem;
 --lineHeightLarge : 1.5;
 --lineHeightSmall : 1.25;
+
+
+/*DEFINE THE MISCELLANEOUS ELEMENTS*/
+--border-radius : 0.8rem;
+
+
 }
