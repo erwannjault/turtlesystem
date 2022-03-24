@@ -13,6 +13,11 @@ line-height : 1.5;
 color : var(--colorSecondary);
 }
 
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /*Rendre flexible et adaptable les images*/
 img {
 display : block;
