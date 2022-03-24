@@ -43,12 +43,14 @@
 --bold : 600;
 --bolder: 800;
 
-/*DEFINE THE TYPOGRAPHY VARIABLES*/
---sizeH1 : 4.6rem;
---lineHeightLarge : ;
---lineHeightSmall : ;
-}
 
-/* Utilisation d'une variable */
-color : var(--variableRandom);
-color : rgba(var(--variableRandom),.5); /* Ex: pour faire des teintes */
+/*DEFINE THE TYPOGRAPHY VARIABLES*/
+--size1 : 4.6rem;
+--size2 : 3.6rem;
+--size3 : 2.8rem;
+--size4 : 2.2rem;
+--size5 : 1.8rem;
+--size6 : 1.6rem;
+--lineHeightLarge : 1.5;
+--lineHeightSmall : 1.25;
+}
