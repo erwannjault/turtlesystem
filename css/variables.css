@@ -2,18 +2,31 @@
 :root{
 --variableRandom : value;
 
+/*DEFINE THE HUE OF THE PRIMARY AND SECONDARY COLORS*/
 --huePrimary : 148;
 --hueSecondary : 248;
 
---colorPrimary : hsl(var(--huePrimary), 100%, 50%);
---colorSecondary : hsl(var(--hueSecondary), 100%, 50%);
---colorWhite : hsl(var(--huePrimary), 1%, 99%);
---baseGrey: var(--huePrimary), 12%, 20%;
+/*DEFINE A BASE THAT THE FRAMEWORK WILL WORK WITH */
+--basePrimary : var(--huePrimary), 100%;
+--baseSecondary : var(--hueSecondary), 100%;
+--baseGrey: var(--huePrimary), 12%;
 
---colorLightGrey : hsla(var(--baseGrey),0.05);
---colorMediumGrey : hsla(var(--baseGrey),0.1);
---colorDarkGrey : hsla(var(--baseGrey),0.15);
 
+/*DEFINE THE COLOR PALETTE AND THE GREY PALETTE AND THEIR LUMINANCE*/
+--colorPrimary : hsl(var(--basePrimary), 50%);
+--colorSecondary : hsl(var(--baseSecondary), 50%);
+--colorWhite : hsl(var(--basePrimary), 99%);
+--colorBlack : hsl(var(--baseGrey));
+--colorBlackTransparent : hsla(var(--baseGrey),0.7);
+
+--colorLightGrey : hsl(var(--baseGrey),96%);
+--colorMediumGrey : hsl(var(--baseGrey),91%);
+--colorDarkGrey : hsl(var(--baseGrey),86%);
+
+
+
+
+/*DEFINE THE SPACING*/
 --xxs : 0.2rem;
 --xs : 0.4rem;
 --s : 0.8rem;
@@ -22,6 +35,18 @@
 --xl : 4rem;
 --xxl : 8rem;
 
+
+/*DEFINE THE FONT WEIGHTS*/
+--lighter : 200;
+--light : 300;
+--regular : 400;
+--bold : 600;
+--bolder: 800;
+
+/*DEFINE THE TYPOGRAPHY VARIABLES*/
+--sizeH1 : 4.6rem;
+--lineHeightLarge : ;
+--lineHeightSmall : ;
 }
 
 /* Utilisation d'une variable */
