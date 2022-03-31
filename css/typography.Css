@@ -1,0 +1,28 @@
+/*MADE BY ERWANN*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--bold);
+}
+
+h1 {
+  font-size: var(--size1);
+}
+
+h2 {
+  font-size: var(--size2);
+}
+
+h3 {
+  font-size: var(--size3);
+}
+
+h4 {
+  font-size: var(--size4);
+}
+
+h5 {
+  font-size: var(--size5);
+}
+
+h6 {
+  font-size: var(--size6);
+}
