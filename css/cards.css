@@ -1,0 +1,7 @@
+/*MADE BY ERWANN*/
+.card {
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorMediumGrey);
+  padding: var(--m);
+  border-radius: var(--borderRadius);
+}

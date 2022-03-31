@@ -1,0 +1,406 @@
+/*MADE BY ERWANN*/
+/*GLOBAL MARGINS*/
+.m-xxs {
+  margin: var(--xxs);
+}
+
+.m-xs {
+  margin: var(--xs);
+}
+
+.m-s {
+  margin: var(--s);
+}
+
+.m-m {
+  margin: var(--m);
+}
+
+.m-l {
+  margin: var(--l);
+}
+
+.m-xl {
+  margin: var(--xl);
+}
+
+.m-xxl {
+  margin: var(--xxl);
+}
+
+/*HORIZONTAL MARGINS*/
+.mx-xxs {
+  margin: auto var(--xxs);
+}
+
+.mx-xs {
+  margin: auto var(--xs);
+}
+
+.mx-s {
+  margin: auto var(--s);
+}
+
+.mx-m {
+  margin: auto var(--m);
+}
+
+.mx-l {
+  margin: auto var(--l);
+}
+
+.mx-xl {
+  margin: auto var(--xl);
+}
+
+.mx-xxl {
+  margin: auto var(--xxl);
+}
+
+/*VERTICAL MARGINS*/
+.my-xxs {
+  margin: var(--xxs) auto;
+}
+
+.my-xs {
+  margin: var(--xs) auto;
+}
+
+.my-s {
+  margin: var(--s) auto;
+}
+
+.my-m {
+  margin: var(--m) auto;
+}
+
+.my-l {
+  margin: var(--l) auto;
+}
+
+.my-xl {
+  margin: var(--xl) auto;
+}
+
+.my-xxl {
+  margin: var(--xxl) auto;
+}
+
+/*TOP MARGINS*/
+.mt-xxs {
+  margin-top: var(--xxs);
+}
+
+.mt-xs {
+  margin-top: var(--xs);
+}
+
+.mt-s {
+  margin-top: var(--s);
+}
+
+.mt-m {
+  margin-top: var(--m);
+}
+
+.mt-l {
+  margin-top: var(--l);
+}
+
+.mt-xl {
+  margin-top: var(--xl);
+}
+
+.mt-xxl {
+  margin-top: var(--xxl);
+}
+
+/*BOTTOM MARGINS*/
+.mb-xxs {
+  margin-bottom: var(--xxs);
+}
+
+.mb-xs {
+  margin-bottom: var(--xs);
+}
+
+.mb-s {
+  margin-bottom: var(--s);
+}
+
+.mb-m {
+  margin-bottom: var(--m);
+}
+
+.mb-l {
+  margin-bottom: var(--l);
+}
+
+.mb-xl {
+  margin-bottom: var(--xl);
+}
+
+.mb-xxl {
+  margin-bottom: var(--xxl);
+}
+
+/*LEFT MARGINS*/
+.ml-xxs {
+  margin-left: var(--xxs);
+}
+
+.ml-xs {
+  margin-left: var(--xs);
+}
+
+.ml-s {
+  margin-left: var(--s);
+}
+
+.ml-m {
+  margin-left: var(--m);
+}
+
+.ml-l {
+  margin-left: var(--l);
+}
+
+.ml-xl {
+  margin-left: var(--xl);
+}
+
+.ml-xxl {
+  margin-left: var(--xxl);
+}
+
+/*RIGHT MARGINS*/
+.mr-xxs {
+  margin-right: var(--xxs);
+}
+
+.mr-xs {
+  margin-right: var(--xs);
+}
+
+.mr-s {
+  margin-right: var(--s);
+}
+
+.mr-m {
+  margin-right: var(--m);
+}
+
+.mr-l {
+  margin-right: var(--l);
+}
+
+.mr-xl {
+  margin-right: var(--xl);
+}
+
+.mr-xxl {
+  margin-right: var(--xxl);
+}
+
+/*GLOBAL PADDINGS*/
+.p-xxs {
+  padding: var(--xxs);
+}
+
+.p-xs {
+  padding: var(--xs);
+}
+
+.p-s {
+  padding: var(--s);
+}
+
+.p-m {
+  padding: var(--m);
+}
+
+.p-l {
+  padding: var(--l);
+}
+
+.p-xl {
+  padding: var(--xl);
+}
+
+.p-xxl {
+  padding: var(--xxl);
+}
+
+/*HORIZONTAL PADDINGS*/
+.px-xxs {
+  padding: auto var(--xxs);
+}
+
+.px-xs {
+  padding: auto var(--xs);
+}
+
+.px-s {
+  padding: auto var(--s);
+}
+
+.px-m {
+  padding: auto var(--m);
+}
+
+.px-l {
+  padding: auto var(--l);
+}
+
+.px-xl {
+  padding: auto var(--xl);
+}
+
+.px-xxl {
+  padding: auto var(--xxl);
+}
+
+/*VERTICAL PADDINGS*/
+.py-xxs {
+  padding: var(--xxs) auto;
+}
+
+.py-xs {
+  padding: var(--xs) auto;
+}
+
+.py-s {
+  padding: var(--s) auto;
+}
+
+.py-m {
+  padding: var(--m) auto;
+}
+
+.py-l {
+  padding: var(--l) auto;
+}
+
+.py-xl {
+  padding: var(--xl) auto;
+}
+
+.py-xxl {
+  padding: var(--xxl) auto;
+}
+
+/*TOP PADDINGS*/
+.pt-xxs {
+  padding-top: var(--xxs);
+}
+
+.pt-xs {
+  padding-top: var(--xs);
+}
+
+.pt-s {
+  padding-top: var(--s);
+}
+
+.pt-m {
+  padding-top: var(--m);
+}
+
+.pt-l {
+  padding-top: var(--l);
+}
+
+.pt-xl {
+  padding-top: var(--xl);
+}
+
+.pt-xxl {
+  padding-top: var(--xxl);
+}
+
+/*BOTTOM PADDINGS*/
+.pb-xxs {
+  padding-bottom: var(--xxs);
+}
+
+.pb-xs {
+  padding-bottom: var(--xs);
+}
+
+.pb-s {
+  padding-bottom: var(--s);
+}
+
+.pb-m {
+  padding-bottom: var(--m);
+}
+
+.pb-l {
+  padding-bottom: var(--l);
+}
+
+.pb-xl {
+  padding-bottom: var(--xl);
+}
+
+.pb-xxl {
+  padding-bottom: var(--xxl);
+}
+
+/*LEFT PADDINGS*/
+.pl-xxs {
+  padding-left: var(--xxs);
+}
+
+.pl-xs {
+  padding-left: var(--xs);
+}
+
+.pl-s {
+  padding-left: var(--s);
+}
+
+.pl-m {
+  padding-left: var(--m);
+}
+
+.pl-l {
+  padding-left: var(--l);
+}
+
+.pl-xl {
+  padding-left: var(--xl);
+}
+
+.pl-xxl {
+  padding-left: var(--xxl);
+}
+
+/*RIGHT PADDINGS*/
+.pr-xxs {
+  padding-right: var(--xxs);
+}
+
+.pr-xs {
+  padding-right: var(--xs);
+}
+
+.pr-s {
+  padding-right: var(--s);
+}
+
+.pr-m {
+  padding-right: var(--m);
+}
+
+.pr-l {
+  padding-right: var(--l);
+}
+
+.pr-xl {
+  padding-right: var(--xl);
+}
+
+.pr-xxl {
+  padding-right: var(--xxl);
+}

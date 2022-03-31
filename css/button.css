@@ -1,12 +1,11 @@
+/*MADE BY JULIEN*/
+
 /* DEFINE BUTTONS */
-
-
 /*RAJOUTER VARIABLE COULEUR ET TYPO ET TAILLE */
-
 .btn {
   background-color: var(--colorPrimary);
   border: .1rem solid var(--colorPrimary);
-  border-radius: .4rem;
+  border-radius: var(--borderRadius);
   color: white;
   cursor: pointer;
   display: inline-block;
@@ -20,40 +19,39 @@
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  transition : var(--transitionTiming);
-
+  transition: var(--transitionTiming);
 }
 
-  .btn:hover {
-    background-color: var(--colorPrimaryHover);
-    border-color: var(--colorPrimaryHover);
-    color: white;
-    outline: 0;
-    transition : var(--transitionTiming);
-  }
+.btn:hover {
+  background-color: var(--colorPrimaryHover);
+  border-color: var(--colorPrimaryHover);
+  color: white;
+  outline: 0;
+  transition: var(--transitionTiming);
+}
 
-  .btn:active {
-    background-color: var(--colorPrimaryActive);
-    border-color: var(--colorPrimaryActive);
-    color: white;
-    transition : var(--transitionTiming);
-    }
+.btn:active {
+  background-color: var(--colorPrimaryActive);
+  border-color: var(--colorPrimaryActive);
+  color: white;
+  transition: var(--transitionTiming);
+}
 
-  .btn-disabled {
-    cursor: default;
-    background-color: var(--colorMediumGrey);
-    border: .1rem solid var(--colorMediumGrey);
-    border-radius: .4rem;
-    color: white;
-    display: inline-block;
-    font-size: 1.1rem;
-    font-weight: 700;
-    height: 3.8rem;
-    letter-spacing: .1rem;
-    line-height: 3.8rem;
-    padding: 0 3.0rem;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
+.btn-disabled {
+  cursor: default;
+  background-color: var(--colorMediumGrey);
+  border: .1rem solid var(--colorMediumGrey);
+  border-radius: var(--borderRadius);
+  color: white;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 3.8rem;
+  letter-spacing: .1rem;
+  line-height: 3.8rem;
+  padding: 0 3.0rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
