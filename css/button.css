@@ -4,8 +4,8 @@
 /*RAJOUTER VARIABLE COULEUR ET TYPO ET TAILLE */
 
 .btn {
-  background-color: blue;
-  border: .1rem solid blue;
+  background-color: var(--colorPrimary);
+  border: .1rem solid var(--colorPrimary);
   border-radius: .4rem;
   color: white;
   cursor: pointer;
@@ -20,19 +20,29 @@
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+  transition : var(--transitionTiming);
+
 }
 
   .btn:hover {
-    background-color: grey;
-    border-color: grey;
+    background-color: var(--colorPrimaryHover);
+    border-color: var(--colorPrimaryHover);
     color: white;
     outline: 0;
+    transition : var(--transitionTiming);
   }
+
+  .btn:active {
+    background-color: var(--colorPrimaryActive);
+    border-color: var(--colorPrimaryActive);
+    color: white;
+    transition : var(--transitionTiming);
+    }
 
   .btn-disabled {
     cursor: default;
-    background-color: #b7b7a4;
-    border: .1rem solid #b7b7a4;
+    background-color: var(--colorMediumGrey);
+    border: .1rem solid var(--colorMediumGrey);
     border-radius: .4rem;
     color: white;
     display: inline-block;
