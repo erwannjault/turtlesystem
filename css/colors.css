@@ -5,3 +5,19 @@ h1,h2,h3,h4,h5,h6, a {
 p, li, blockquote {
   color : var(--colorBlackTransparent);
 }
+
+.bg-white {
+  background-color : var(--colorWhite);
+}
+
+.bg-primary {
+  background-color : var(--colorPrimary);
+}
+
+.bg-secondary {
+  background-color: var(--color-Secondary);
+}
+
+.bg-primary-transparent {
+  background-color : var(--colorPrimaryTransparent);
+}

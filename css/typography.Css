@@ -26,3 +26,15 @@ h5 {
 h6 {
   font-size: var(--size6);
 }
+
+.body-large {
+  font-size : var(--size5);
+}
+
+.body-standard {
+  font-size : var(--size6);
+}
+
+.body-small{
+  font-size : var(--size7);
+}
