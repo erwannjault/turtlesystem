@@ -236,3 +236,24 @@ columnw-gap: var(--xl);
 .flex-shrink-four {
   flex-shrink: 4;
 }
+
+/*FLEX ALIGN SELF*/
+.flex-s-start{
+  align-self: flex-start;
+}
+
+.flex-s-end {
+  align-self: flex-end;
+}
+
+.flex-s-center {
+  align-self: center;
+}
+
+.flex-s-stretch {
+  align-self: stretch;
+}
+
+.flex-s-baseline {
+  align-self: baseline;
+}

@@ -4,4 +4,5 @@
   border: 1px solid var(--colorMediumGrey);
   padding: var(--m);
   border-radius: var(--borderRadius);
+  margin : var(--m) 0;
 }

@@ -14,7 +14,7 @@
   height: 3.8rem;
   letter-spacing: .1rem;
   line-height: 3.8rem;
-  padding: 0 3.0rem;
+  padding: 0 var(--l);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -22,6 +22,21 @@
   transition: var(--transitionTiming);
 }
 
+.btn-outline {
+  background-color : transparent;
+  color : var(--colorPrimary);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color : var(--colorBlackTransparent);
+  padding : 0 var(--s);
+}
+
+
+
+/*HOVER & FOCUS STATES*/
 .btn:hover, .btn:focus {
   background-color: var(--colorPrimaryHover);
   border-color: var(--colorPrimaryHover);
@@ -30,6 +45,20 @@
   transition: var(--transitionTiming);
 }
 
+.btn-outline:hover, .btn-outline:focus {
+  background-color : var(--colorPrimaryTransparent);
+  color : var(--colorPrimaryHover);
+  border-color : var(--colorPrimaryHover);
+}
+
+.btn-ghost:hover, .btn-ghost:focus{
+  background-color : var(--colorMediumGrey);
+  color : var(--colorBlack);
+  border-color : var(--colorMediumGrey);
+}
+
+
+/*ACTIVE STATES*/
 .btn:active {
   background-color: var(--colorPrimaryActive);
   border-color: var(--colorPrimaryActive);
@@ -37,21 +66,11 @@
   transition: var(--transitionTiming);
 }
 
+
+/*DISABLED BTN*/
 .btn-disabled, .btn-disabled:hover, .btn-disabled:active, .btn-disabled:focus {
   cursor: default;
-  background-color: var(--colorMediumGrey);
-  border: .1rem solid var(--colorMediumGrey);
-  border-radius: var(--borderRadius);
-  color: var(--colorDarkGrey);
-  display: inline-block;
-  font-size: 1.1rem;
-  font-weight: 700;
-  height: 3.8rem;
-  letter-spacing: .1rem;
-  line-height: 3.8rem;
-  padding: 0 3.0rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
+  background-color: var(--colorDarkGrey);
+  border: .1rem solid var(--colorDarkGrey);
+  color : var(--colorBlackTransparent);
+  opacity: 0.4;}

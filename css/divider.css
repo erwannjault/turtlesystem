@@ -1,0 +1,8 @@
+hr {
+  border: none;
+    border-top: 0.1rem solid var(--colorDarkGrey);
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}

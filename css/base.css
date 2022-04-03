@@ -23,7 +23,6 @@ html {
 }
 
 body {
-  max-width: 1280px;
   margin: auto;
   font-size : var(--size6);
 }
@@ -33,4 +32,14 @@ img {
 display : block;
 max-width : 100%;
 height : auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+nav * {
+  display: inherit;
 }
