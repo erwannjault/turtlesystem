@@ -22,7 +22,7 @@
   transition: var(--transitionTiming);
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   background-color: var(--colorPrimaryHover);
   border-color: var(--colorPrimaryHover);
   color: white;
@@ -37,12 +37,12 @@
   transition: var(--transitionTiming);
 }
 
-.btn-disabled {
+.btn-disabled, .btn-disabled:hover, .btn-disabled:active, .btn-disabled:focus {
   cursor: default;
   background-color: var(--colorMediumGrey);
   border: .1rem solid var(--colorMediumGrey);
   border-radius: var(--borderRadius);
-  color: white;
+  color: var(--colorDarkGrey);
   display: inline-block;
   font-size: 1.1rem;
   font-weight: 700;
