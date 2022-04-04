@@ -1,4 +1,4 @@
-/*MADE BY ERWANN*/
+/*MADE BY HUGO*/
 
 a:not(.btn) {
   color: var(--colorPrimary);
@@ -10,6 +10,14 @@ a:not(.btn):hover {
   color: var(--colorPrimaryHover);
 }
 
+a:not(.btn):hover {
+  color: var(--colorSecondary);
+  transition: 0.3s;
+}
+
+a:not(.btn)focus {
+  color: var(--colorSecondary);
+  
 a:not(.btn):active {
   color: var(--colorPrimaryActive);
 }
