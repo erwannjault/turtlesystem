@@ -1,0 +1,14 @@
+/*MADE BY HUGO*/
+
+table {
+  border-spacing: 0;
+  overflow-x: auto;
+  text-align: left;
+  width: 100%;
+}
+
+td, th {
+    padding: 1rem 1.5rem;
+  border-bottom: .1rem solid var(--colorPrimary);
+
+}

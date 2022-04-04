@@ -1,13 +1,15 @@
+/*MADE BY HUGO*/
 a {
-  color: blue;
+  color: var(--colorPrimary);
   text-decoration: none;
 
 }
 
 a:hover {
-  color: red
+  color: var(--colorSecondary);
+  transition: 0.3s;
 }
 
 a:focus {
-  color: green;
+  color: var(--colorSecondary);
 }
