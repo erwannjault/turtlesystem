@@ -1,15 +1,34 @@
+
 /*MADE BY HUGO*/
-a {
+=======
+a:not(.btn) {
   color: var(--colorPrimary);
-  text-decoration: none;
+  text-decoration: underline;
 
 }
 
-a:hover {
+a:not(.btn):hover {
+  color: var(--colorPrimaryHover);
+}
+
+a:not(.btn):hover {
   color: var(--colorSecondary);
   transition: 0.3s;
 }
 
-a:focus {
+a:not(.btn)focus {
   color: var(--colorSecondary);
+  
+a:not(.btn):active {
+  color: var(--colorPrimaryActive);
+}
+
+nav li a:not(.btn) {
+  text-decoration: none;
+  font-weight : var(--bold);
+  color : var(--colorBlackTransparent);
+}
+
+nav li a:not(.btn):hover, nav li a:not(.btn):focus, nav li a:not(.btn):active {
+  color : var(--colorPrimary);
 }

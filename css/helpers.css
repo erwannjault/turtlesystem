@@ -57,6 +57,10 @@
   margin: auto var(--xxl);
 }
 
+.mx-auto {
+  margin : auto auto;
+}
+
 /*VERTICAL MARGINS*/
 .my-xxs {
   margin: var(--xxs) auto;
