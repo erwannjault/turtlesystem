@@ -22,6 +22,7 @@
   --colorPrimary: hsl(var(--basePrimary), calc(var(--luminancePrimary)*1%));
   --colorPrimaryTransparent:  hsla(var(--basePrimary), calc(var(--luminancePrimary)*1%), 0.15);
   --colorSecondary: hsl(var(--baseSecondary), calc(var(--luminanceSecondary)*1%));
+  --colorSecondaryTransparent:  hsla(var(--baseSecondary), calc(var(--luminanceSecondary)*1%), 0.15);
   --colorWhite: hsl(var(--basePrimary), 99%);
   --colorBlack: hsl(var(--baseGrey), 20%);
   --colorBlackTransparent: hsla(var(--baseGrey), 20%, 0.7);

@@ -23,3 +23,59 @@ p, li, blockquote {
 .bg-primary-transparent {
   background-color : var(--colorPrimaryTransparent);
 }
+
+.bg-lighgrey {
+  background-color : var(--colorLightGrey);
+}
+
+.bg-mediumgrey {
+  background-color : var(--colorMediumGrey);
+}
+
+.bg-darkgrey {
+  background-color : var(--colorDarkGrey);
+}
+
+.bg-black {
+  background-color : var(--colorBlack);
+}
+
+.bg-blacktransparent{
+  background-color : var(--colorBlackTransparent);
+}
+
+.color-white {
+  color : var(--colorWhite);
+}
+
+.color-primary {
+  color : var(--colorPrimary);
+}
+
+.color-secondary {
+  color: var(--color-Secondary);
+}
+
+.color-primary-transparent {
+-color : var(--colorPrimaryTransparent);
+}
+
+.color-lighgrey {
+  color : var(--colorLightGrey);
+}
+
+.color-mediumgrey {
+  color : var(--colorMediumGrey);
+}
+
+.color-darkgrey {
+  color : var(--colorDarkGrey);
+}
+
+.color-black {
+    color : var(--colorBlack);
+}
+
+.color-blacktransparent{
+  color : var(--colorBlackTransparent);
+}

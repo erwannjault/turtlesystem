@@ -139,61 +139,61 @@
 }
 
 /*FLEX GAP HORIZONTAL*/
-.flex-gapx-xxs {
+.flex-gapy-xxs {
   row-gap: var(--xxs);
 }
 
-.flex-gapx-xs {
+.flex-gapy-xs {
   row-gap: var(--xs);
 }
 
-.flex-gapx-s {
+.flex-gapy-s {
   row-gap: var(--s);
 }
 
-.flex-gapx-m {
+.flex-gapy-m {
   row-gap: var(--m);
 }
 
-.flex-gapx-l {
+.flex-gapy-l {
   row-gap: var(--l);
 }
 
-.flex-gapx-xl {
+.flex-gapy-xl {
   row-gap: var(--xl);
 }
 
-.flex-gapx-xxl {
+.flex-gapy-xxl {
   row-gap: var(--xxl);
 }
 
 
 /*FLEX GAP VERTICAL*/
-.flex-gapy-xxs {
+.flex-gapx-xxs {
   column-gap: var(--xxs);
 }
 
-.flex-gapy-xs {
+.flex-gapx-xs {
   column-gap: var(--xs);
 }
 
-.flex-gapy-s {
+.flex-gapx-s {
   column-gap: var(--s);
 }
 
-.flex-gapy-m {
+.flex-gapx-m {
   column-gap: var(--m);
 }
 
-.flex-gapy-l {
+.flex-gapx-l {
   column-gap: var(--l);
 }
 
-.flex-gapy-xl {
+.flex-gapx-xl {
 columnw-gap: var(--xl);
 }
 
-.flex-gapy-xxl {
+.flex-gapx-xxl {
   column-gap: var(--xxl);
 }
 
