@@ -11,7 +11,7 @@
   <nav class="inline-flex width-100 bg-white">
     <div class="wrapper flex-j-spacebetween flex-i-center width-100 my-m">
 
-      <img class="icon" src="img/turtle-system-icon.svg"/>
+      <img class="icon" src="img/turtle-system-icon.svg" />
       <ul>
         <li class="p-s">
           <a href="#">Item 1</a>
@@ -27,55 +27,131 @@
     </div>
   </nav>
   <main class="wrapper">
+    <section class="card">
+      <h2 class="mb-s size-4">Typographie</h2>
+      <p class="mb-l">
+        En utilisant l'unité rem dans le framework, nous avons créé une échelle typographique qui peut être modifié en changeant simplement la taille de l'unité de base dans l'élément root. La typographie actuelle a une base de 1.6rem soit 16px.
+        Chaque lineheight est relative et va de 125% à 150% en prenant la font-size du texte comme base. Le Turtle System utilise la font-family Poppins, créé par Jonny Pinhorn et fourni à travers le service Google Fonts.
 
-    <!-- Test Button par défaut-->
-    <a class="btn" href="#">Primary Button</a>
+      <div class="mb-m">
+        <h1 class="inline mr-s color-blacktransparent">Size 1</h1><span><code class="p-s mr-s">h1</code>ou<code class="p-s mx-s">.size1</code> 4.6rem (46px)</span>
+      </div>
+      <div class="mb-m">
+        <h2 class="inline mr-s color-blacktransparent">Size 2</h2><span><code class="p-s mr-s">h2</code>ou<code class="p-s  mx-s">.size2</code> 3.6rem (36px)</span>
+      </div>
+      <div class="mb-m">
+        <h3 class="inline mr-s color-blacktransparent">Size 3</h3><span><code class="p-s mr-s">h3</code>ou<code class="p-s  mx-s">.size3</code> 2.8rem (28px)</span>
+      </div>
+      <div class="mb-m">
+        <h4 class="inline mr-s color-blacktransparent">Size 4</h4><span><code class="p-s mr-s">h4</code>ou<code class="p-s  mx-s">.size4</code> 2.2rem (22px)</span>
+      </div>
+      <div class="mb-m">
+        <h5 class="inline mr-s color-blacktransparent">Size 5</h5><span><code class="p-s mr-s">h5</code>ou<code class="p-s  mx-s">.size5</code> 1.8rem (18px)</span>
+      </div>
+      <div class="mb-m">
+        <h6 class="inline mr-s color-blacktransparent">Size 6</h6><span><code class="p-s mr-s">h6</code>ou<code class="p-s  mx-s">.size6</code> 1.6rem (16px)</span>
+      </div>
+      <div class="mb-xl">
+        <h6 class="inline mr-s color-blacktransparent">Size 7</h6><span><code class="p-s  mx-s">.size7</code> 1.2rem (12px)</span>
+      </div>
+      <div class="mb-m">
+        <p class="inline mr-s color-blacktransparent body-large">Body Large</p><span><code class="p-s  mx-s">p .bodylarge</code> 1.8rem (12px)</span>
+      </div>
+      <div class="mb-m">
+        <p class="inline mr-s color-blacktransparent body-standard">Body Standard</p><span><code class="p-s  mx-s">p .bodystandard</code> 1.6rem (16px)</span>
+      </div>
+      <div class="mb-l">
+        <p class="inline mr-s color-blacktransparent body-small">Body Small</p><span><code class="p-s  mx-s">p .bodysmall</code> 1.2rem (12px)</span>
+      </div>
+      <h3 class="mb-s size-6 color-black">Exemple de code</h3>
+      <pre><code class="my-m">&lt;h1 class="size-5"&gt;Heading&lt;/h1&gt;
+&lt;p class="p body-large"&gt;&lt;/p&gt;</code></pre>
+    </section>
 
-    <a class="btn btn-outline" href="#">Outline Button</a>
 
-    <a class="btn btn-ghost" href="#">Ghost Button</a>
+    <section class="card">
+      <h2 class="mb-s size-4">Boutons</h2>
+      <p class="mb-l">
+        Le bouton est un des éléments d'interface les plus importants. Sur le Turtle System, il existe quatre styles : le style solide par défaut, <span><code class="p-xxs">outline</code></span>, <span><code class="p-xxs">ghost</code></span> ainsi que <span><code class="p-xxs">disabled</code></span>.
 
-    <!-- Test Button par défaut-->
-    <a class="btn btn-disabled" href="#">Disabled Button</a>
-
-    <a href="#">zuzuzu</a>
-
-    <main class="card">
-      <h1>ddd</h1>
-      <p>dddd</p>
-      <hr />
-      <h2>ddd</h2>
-      <p>dddd</p>
-      <section class="card">
-
-
-
-        <h3>ddd</h3>
-        <p>dddd</p>
-
-      </section>
-      <h4>dddd</h4>
-      <p>
-        dddd
       </p>
 
-      <h5>dddd</h5>
-      <p>
-        dddd
-      </p>
+      <h3 class="mb-s size-6 color-black">Solid</h3>
+      <div class="flex flex-w-wrap flex-gapx-m flex-gapy-m mb-l">
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn</h4>
+          <a class="btn" href="#">Standard Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-primary</h4>
+          <a class="btn btn-primary" href="#">Primary Button</a>
+        </div>
 
-      <h6>dddd</h6>
-      <p>
-        dddd
-      </p>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-secondary</h4>
+          <a class="btn btn-secondary" href="#">Secondary Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-grey</h4>
+          <a class="btn btn-grey" href="#">Grey Button</a>
+        </div>
+      </div>
 
+      <h3 class="mb-s size-6 color-black">Outline</h3>
+      <div class="flex flex-w-wrap flex-gapx-m flex-gapy-m mb-l">
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ouline</h4>
+          <a class="btn btn-outline" href="#">Standard Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-outline-primary</h4>
+          <a class="btn btn-outline-primary" href="#">Primary Button</a>
+        </div>
 
-      <pre><code>zuzuzu
-<span>&lt;blockquote&gt;</span>
-zuzuzu
-<span>&lt;/blockquote&gt;</span></code></pre>
-      </section>
-    </main>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-outline-secondary</h4>
+          <a class="btn btn-outline-secondary" href="#">Secondary Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-outline-grey</h4>
+          <a class="btn btn-outline-grey" href="#">Grey Button</a>
+        </div>
+      </div>
+
+      <h3 class="mb-s size-6 color-black">Ghost</h3>
+      <div class="flex flex-w-wrap flex-gapx-m flex-gapy-m mb-l">
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-host</h4>
+          <a class="btn btn-ghost" href="#">Standard Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ghost-primary</h4>
+          <a class="btn btn-ghost-primary" href="#">Primary Button</a>
+        </div>
+
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ghost-secondary</h4>
+          <a class="btn btn-ghost-secondary" href="#">Secondary Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ghost-grey</h4>
+          <a class="btn btn-ghost-grey" href="#">Grey Button</a>
+        </div>
+      </div>
+
+      <h3 class="mb-s size-6 color-black">Disabled</h3>
+      <div class="flex flex-w-wrap flex-gapx-m flex-gapy-m mb-l">
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-disabled</h4>
+          <a class="btn btn-disabled" href="#">Disabled Button</a>
+        </div>
+      </div>
+
+      <h3 class="mb-s size-6 color-black">Exemple de code</h3>
+      <pre><code class="my-m">&lt;a class="btn btn-primary" href="#"&gt;Primary Button&lt;/a&gt;</code></pre>
+    </section>
+
+  </main>
 </body>
 
 </html>

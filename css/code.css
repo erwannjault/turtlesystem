@@ -10,10 +10,14 @@ code {
   display : block;
   width : 100%;
   border-radius : none;
-  margin : var(--m) 0;
 }
 
 code span {
   color : var(--colorPrimaryHover);
   line-height : var(--l);
+}
+
+span code {
+  display: inline-block;
+  width : inherit;
 }
