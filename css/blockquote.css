@@ -1,11 +1,11 @@
 /*MADE BY HUGO*/
 
 blockquote {
-  margin-left: 100px;
-  max-width: 40%;
   margin: auto;
   padding: 1rem 1.5rem;
   border-left: var(--xs) solid  var(--colorPrimary);
   display : block;
-
+  font-size : var(--size5);
+  font-weight : var(--light);
+  font-style : italic;
 }
