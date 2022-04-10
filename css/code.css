@@ -21,3 +21,7 @@ span code {
   display: inline-block;
   width : inherit;
 }
+
+code.p-xxs {
+  border : none;
+}
