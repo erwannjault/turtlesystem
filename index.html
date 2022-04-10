@@ -122,7 +122,7 @@
       <h3 class="mb-s size-6 color-black">Ghost</h3>
       <div class="flex flex-w-wrap flex-gapx-m flex-gapy-m mb-l">
         <div>
-          <h4 class="color-blacktransparent size-7">.btn .btn-host</h4>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ghost</h4>
           <a class="btn btn-ghost" href="#">Standard Button</a>
         </div>
         <div>
@@ -239,6 +239,14 @@
               <td>The table body</td>
               <td>with two columns</td>
           </tr>
+          <tr>
+              <td>The table body</td>
+              <td>with two columns</td>
+          </tr>
+          <tr>
+              <td>The table body</td>
+              <td>with two columns</td>
+          </tr>
       </tbody>
   </table>
     </section>
@@ -246,8 +254,122 @@
     <section class="card">
         <h2 class="mb-s size-4">Grid</h2>
         <p class="mb-l">
-          Grid.
+          Grid est un outil puissant, permettant de gérer des affichages en colonnage simplement. Pour le framework Turtle System, nous avons opté pour un système de grille flexible mettant à profit les unités  <span><code class="p-xxs">fr</code></span>, la fonction  <span><code class="p-xxs">repeat</code></span> ainsi les attributs <span><code class="p-xxs">minmax()</code></span> et <span><code class="p-xxs">auto-fit</code></span> . Cela permet de gérer l'adaptation aux différents supports sans media queries dans la grande majorité des cas. Ainsi, pour mettre un container en <span><code class="p-xxs">display : grid;</code></span>, il suffit de lui attriber la class <span class="bolder">.grid</span> et il hérite de la stylisation suivante :
         </p>
+
+          <pre><code class="mt-xxs mb-s">.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: var(--m);
+}</code></pre>
+
+          <div class="grid mb-l">
+            <div class="card p-m">
+              <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+              <p>
+                Exemple
+              </p>
+          </div>
+
+          <div class="card p-m">
+            <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+            <p>
+              Exemple
+            </p>
+        </div>
+
+        <div class="card p-m">
+          <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+          <p>
+            Exemple
+          </p>
+      </div>
+
+      <div class="card p-m">
+        <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+        <p>
+          Exemple
+        </p>
+    </div>
+
+
+
+        </div>
+
+          <h3 class="mb-s size-5">Grid Item Span</h3>
+          <p class="mb-l">Pour chaque item de la grid, vous pouvez renseigner le nombre de colonnes ou de lignes sur lesquelles vous souhaitez que l'item s'étende en utilisant au choix :
+
+          <h4 class="color-blacktransparent size-7">.grid .grid-col-span-{nbDeColonnes}</h4>
+          <div class="grid mb-l">
+            <div class="card p-m">
+              <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+              <p>
+                Exemple
+              </p>
+          </div>
+
+          <div class="card p-m grid-col-span-two">
+            <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+            <p>
+              Exemple
+            </p>
+        </div>
+
+        <div class="card p-m">
+          <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+          <p>
+            Exemple
+          </p>
+      </div>
+
+      <div class="card p-m">
+        <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+        <p>
+          Exemple
+        </p>
+    </div>
+
+    
+  </div>
+
+    <h4 class="color-blacktransparent size-7">.grid .grid-row-span-{nbDeLignes}</h4>
+    <div class="grid mb-l">
+      <div class="card p-m">
+        <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+        <p>
+          Exemple
+        </p>
+    </div>
+
+    <div class="card p-m">
+      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+      <p>
+        Exemple
+      </p>
+  </div>
+
+    <div class="card p-m grid-row-span-two">
+      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
+      <p>
+        Exemple
+      </p>
+  </div>
+
+  <div class="card p-m">
+    <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
+    <p>
+      Exemple
+    </p>
+</div>
+
+<div class="card p-m">
+  <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
+  <p>
+    Exemple
+  </p>
+</div></div>
+
+
       </section>
 
       <section class="card">
