@@ -1,6 +1,5 @@
 /*MADE BY ERWANN*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 :root {
   /*DEFINE THE FONT FAMILY*/
   --fontFamily: Poppins;
@@ -22,6 +21,7 @@
   --colorPrimary: hsl(var(--basePrimary), calc(var(--luminancePrimary)*1%));
   --colorPrimaryTransparent:  hsla(var(--basePrimary), calc(var(--luminancePrimary)*1%), 0.15);
   --colorSecondary: hsl(var(--baseSecondary), calc(var(--luminanceSecondary)*1%));
+  --colorSecondaryTransparent:  hsla(var(--baseSecondary), calc(var(--luminanceSecondary)*1%), 0.15);
   --colorWhite: hsl(var(--basePrimary), 99%);
   --colorBlack: hsl(var(--baseGrey), 20%);
   --colorBlackTransparent: hsla(var(--baseGrey), 20%, 0.7);

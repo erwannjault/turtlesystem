@@ -1,3 +1,5 @@
+/*MADE BY ERWANN*/
+
 .width-100 {
   width: 100%;
 }
@@ -36,4 +38,16 @@
 
 .inline {
   display: inline-block;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position : sticky;
 }

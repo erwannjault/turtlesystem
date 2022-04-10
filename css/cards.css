@@ -2,7 +2,7 @@
 .card {
   background-color: var(--colorWhite);
   border: 1px solid var(--colorMediumGrey);
-  padding: var(--m);
+  padding: var(--l);
   border-radius: var(--borderRadius);
   margin : var(--m) 0;
 }

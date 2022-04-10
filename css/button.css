@@ -74,3 +74,128 @@
   border: .1rem solid var(--colorDarkGrey);
   color : var(--colorBlackTransparent);
   opacity: 0.4;}
+
+
+/*COLORS BUTTON*/
+.btn-primary {
+  background-color : var(--colorPrimary);
+  border: .1rem solid var(--colorPrimary);
+  color : white;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color : var(--colorPrimaryHover);
+  border: .1rem solid var(--colorPrimaryHover);
+}
+
+.btn-primary:active {
+  background-color : var(--colorPrimaryActive);
+  border: .1rem solid var(--colorPrimaryActive);
+}
+
+.btn-secondary {
+  background-color : var(--colorSecondary);
+  border: .1rem solid var(--colorSecondary);
+  color : white;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color : var(--colorSecondaryHover);
+  border: .1rem solid var(--colorSecondaryHover);
+}
+
+.btn-secondary:active {
+  background-color : var(--colorSecondaryActive);
+  border: .1rem solid var(--colorSecondaryActive);
+}
+
+.btn-grey {
+  background-color : var(--colorMediumGrey);
+  border: .1rem solid var(--colorMediumGrey);
+  color : var(--colorBlack);
+}
+
+.btn-grey:hover, .btn-grey:focus {
+  background-color : var(--colorDarkGrey);
+  border: .1rem solid var(--colorDarkGrey);
+  color : var(--colorBlack);
+}
+
+.btn-grey:active {
+  filter : brightness(85%);
+}
+
+.btn-outline-primary {
+  background-color : transparent;
+  border: .1rem solid var(--colorPrimary);
+  color : var(--colorPrimary);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background-color : var(--colorPrimaryTransparent);
+  color : var(--colorPrimaryHover);
+  border-color : var(--colorPrimaryHover);
+}
+
+.btn-outline-secondary {
+  background-color : transparent;
+  border: .1rem solid var(--colorSecondary);
+  color : var(--colorSecondary);
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+  background-color : var(--colorSecondaryTransparent);
+  color : var(--colorSecondaryHover);
+  border-color : var(--colorSecondaryHover);
+}
+
+.btn-outline-grey {
+  background-color : transparent;
+  border: .1rem solid var(--colorBlackTransparent);
+  color : var(--colorBlackTransparent);
+}
+
+.btn-outline-grey:hover, .btn-outline-grey:focus {
+  background-color : var(--colorMediumGrey);
+  color : var(--colorBlack);
+  border-color : var(--colorBlack);
+}
+
+.btn-ghost-primary {
+  background-color: transparent;
+  border-color: transparent;
+  color : var(--colorPrimary);
+  padding : 0 var(--s);
+}
+
+.btn-ghost-primary:hover, .btn-ghost-primary:focus {
+  background-color : var(--colorPrimaryTransparent);
+  color : var(--colorPrimaryHover);
+  border-color: transparent;
+}
+
+.btn-ghost-secondary {
+  background-color: transparent;
+  border-color: transparent;
+  color : var(--colorSecondary);
+  padding : 0 var(--s);
+}
+
+.btn-ghost-secondary:hover, .btn-ghost-secondary:focus {
+  background-color : var(--colorSecondaryTransparent);
+  color : var(--colorSecondaryHover);
+  border-color: transparent;
+}
+
+.btn-ghost-grey {
+  background-color: transparent;
+  border-color: transparent;
+  color : var(--colorBlackTransparent);
+  padding : 0 var(--s);
+}
+
+.btn-ghost-grey:hover, .btn-ghost-grey:focus {
+  background-color: var(--colorMediumGrey);
+  border-color: transparent;
+  color : var(--colorBlack);
+}
