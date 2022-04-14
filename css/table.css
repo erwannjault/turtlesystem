@@ -1,0 +1,27 @@
+
+/*MADE BY HUGO*/
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	}
+
+
+th {
+	background: var(--colorDarkGrey);
+	color: var(--colorBlack);
+  font-weight : var(--bold);
+	}
+
+td, th {
+	padding: var(--s);
+	border: 0.7px solid #ccc;
+	text-align: left;
+	font-size: var(--size6);
+	}
+
+tr:nth-child(even){
+  background : var(--colorLightGrey);
+}
+=======
+
