@@ -219,36 +219,70 @@
     <section class="card">
       <h2 class="mb-s size-4">Formulaire</h2>
       <p class="mb-l">
-        Formulaire.
+    L'élément Form permet de créer un formulaire avec des éléments interactifs, donnant la possibilité à l'utilisateur de fournir des informations.
       </p>
+
+        <form id="contact" action="" method="post">
+          <fieldset>
+            <input placeholder="Votre nom" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Votre adresse mail" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Votre numéro de téléphone" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Votre site internet" type="url" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Ecrivez votre message ici" tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" data-submit="...Envoyer">Envoyer</button>
+          </fieldset>
+
+        </form>
+
+
+
     </section>
 
     <section class="card">
       <h2 class="mb-s size-4">Tableau</h2>
       <p class="mb-l">
-        Tableau.
+        L'élément Table permet de représenter un tableau de données possédant plusieurs dimensions.
       </p>
       <table>
-      <thead>
-          <tr>
-              <th colspan="2">The table header</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>The table body</td>
-              <td>with two columns</td>
-          </tr>
-          <tr>
-              <td>The table body</td>
-              <td>with two columns</td>
-          </tr>
-          <tr>
-              <td>The table body</td>
-              <td>with two columns</td>
-          </tr>
-      </tbody>
-  </table>
+
+      <tr>
+        <th>Un</th>
+        <th>Deux</th>
+        <th>Trois</th>
+      </tr>
+        <td>Un</td>
+        <td>Deux</td>
+        <td>Trois</td>
+      </tr>
+      <tr>
+        <td>Un</td>
+        <td>Deux</td>
+        <td>Trois</td>
+      </tr>
+
+      <tr>
+        <td>Un</td>
+        <td>Deux</td>
+        <td>Trois</td>
+      </tr>
+
+      <tr>
+        <td>Un</td>
+        <td>Deux</td>
+        <td>Trois</td>
+      </tr>
+    </table>
+
     </section>
 
     <section class="card">
