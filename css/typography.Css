@@ -53,3 +53,23 @@ p, ol, ul, dl, .body-standard {
   font-size : var(--size7);
   line-height : var(--lineHeightLarge);
 }
+
+.lighter {
+  font-weight : 200;
+}
+
+.light {
+  font-weight : 300;
+}
+
+.regular {
+  font-weight : 400;
+}
+
+.bold {
+  font-weight : 600;
+}
+
+.bolder {
+  font-weight : 800;
+}
