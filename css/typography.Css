@@ -44,7 +44,7 @@ h6, .size-6 {
   line-height : var(--lineHeightLarge);
 }
 
-p, ol, ul, dl, .body-standard {
+p, ol, ul, dl, input, textarea, .body-standard {
   font-size : var(--size6);
   line-height : var(--lineHeightLarge);
 }
@@ -52,4 +52,8 @@ p, ol, ul, dl, .body-standard {
 .body-small{
   font-size : var(--size7);
   line-height : var(--lineHeightLarge);
+}
+
+input, textarea {
+  font-family: var(--fontFamily), Arial, sans-serif;
 }
