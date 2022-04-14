@@ -1,5 +1,62 @@
+/*MADE BY ERWANN*/
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: var(--m);
+  grid-template-rows : min-content;
+}
+
+/*SPAN ROW*/
+.grid-col-span-one {
+grid-column: span 1;
+}
+
+.grid-col-span-two {
+grid-column: span 2;
+}
+
+.grid-col-span-three {
+grid-column: span 3;
+}
+
+.grid-col-span-four {
+grid-column: span 4;
+}
+
+.grid-col-span-five {
+grid-column : span 5;
+}
+
+/*SPAN ROW*/
+.grid-row-span-one {
+grid-row: span 1;
+}
+
+.grid-row-span-two {
+grid-row: span 2;
+}
+
+.grid-row-span-three {
+grid-row: span 3;
+}
+
+.grid-row-span-four {
+grid-row: span 4;
+}
+
+.grid-row-span-five {
+grid-row : span 5;
+}
+
+/*GRID AUTO FLOW*/
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-flow-column {
+  grid-auto-flow: column;
+}
+
+.grid-flow-dense {
+  grid-auto-flow : dense;
 }
