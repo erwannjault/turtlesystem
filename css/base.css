@@ -8,19 +8,14 @@ box-sizing : border-box;
 
 
 /* Changement du font-size pour que 1rem = 10px, définition d'une couleur, d'une font-family et d'une line-height standard pour tous les éléments */
-:root {
+html {
 font-size: 62.5%;
 font-family : var(--fontFamily), 'Roboto', 'Helvetica', 'Arial', sans-serif;
 line-height : 1.5;
-/*
-color : var(--colorSecondary);
-*/
+background-color : var(--colorLightGrey);
+color : var(--colorBlackTransparent);
 }
 
-html {
-  background-color : var(--colorLightGrey);
-  color : var(--colorBlackTransparent);
-}
 
 body {
   margin: auto;
