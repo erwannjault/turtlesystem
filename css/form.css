@@ -1,3 +1,60 @@
-input, textarea, select {
+/*MADE BY HUGO*/
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: white;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+
+fieldset {
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+
+textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: var(--colorPrimary);
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+button[type="submit"]:hover {
+  background: var(--colorPrimaryHover);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px var(--colorPrimaryHover);
+}
+
+.copyright {
+  text-align: center;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
 }
