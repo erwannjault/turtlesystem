@@ -1,0 +1,18 @@
+/*MADE BY HUGO*/
+dl, ol, ul
+{
+  list-style: none;
+}
+
+
+ol {
+  list-style: decimal inside;
+}
+
+ul {
+  list-style: circle inside;
+}
+
+dd {
+  margin-inline-start: var(--m);
+}

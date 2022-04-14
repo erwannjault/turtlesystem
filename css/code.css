@@ -1,0 +1,27 @@
+/*MADE BY ERWANN*/
+
+code {
+  background-color : var(--colorLightGrey);
+  color : var(--colorBlackTransparent);
+  font-family : monospace;
+  font-size : var(--size6);
+  padding : var(--m);
+  border-left : solid var(--xxs) var(--colorPrimary);
+  display : block;
+  width : 100%;
+  border-radius : none;
+}
+
+code span {
+  color : var(--colorPrimaryHover);
+  line-height : var(--l);
+}
+
+span code {
+  display: inline-block;
+  width : inherit;
+}
+
+code.p-xxs {
+  border : none;
+}

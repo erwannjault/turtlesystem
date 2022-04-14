@@ -1,0 +1,81 @@
+/*MADE BY ERWANN*/
+
+h1,h2,h3,h4,h5,h6, a {
+  color : var(--colorPrimary);
+}
+
+p, li, blockquote {
+  color : var(--colorBlackTransparent);
+}
+
+.bg-white {
+  background-color : var(--colorWhite);
+}
+
+.bg-primary {
+  background-color : var(--colorPrimary);
+}
+
+.bg-secondary {
+  background-color: var(--color-Secondary);
+}
+
+.bg-primary-transparent {
+  background-color : var(--colorPrimaryTransparent);
+}
+
+.bg-lightgrey {
+  background-color : var(--colorLightGrey);
+}
+
+.bg-mediumgrey {
+  background-color : var(--colorMediumGrey);
+}
+
+.bg-darkgrey {
+  background-color : var(--colorDarkGrey);
+}
+
+.bg-black {
+  background-color : var(--colorBlack);
+}
+
+.bg-blacktransparent{
+  background-color : var(--colorBlackTransparent);
+}
+
+.color-white {
+  color : var(--colorWhite);
+}
+
+.color-primary {
+  color : var(--colorPrimary);
+}
+
+.color-secondary {
+  color: var(--color-Secondary);
+}
+
+.color-primary-transparent {
+-color : var(--colorPrimaryTransparent);
+}
+
+.color-lighgrey {
+  color : var(--colorLightGrey);
+}
+
+.color-mediumgrey {
+  color : var(--colorMediumGrey);
+}
+
+.color-darkgrey {
+  color : var(--colorDarkGrey);
+}
+
+.color-black {
+    color : var(--colorBlack);
+}
+
+.color-blacktransparent{
+  color : var(--colorBlackTransparent);
+}

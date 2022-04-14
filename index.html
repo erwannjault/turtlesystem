@@ -1,17 +1,462 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="css/master.css">
-  </head>
-  <body>
 
-    <!-- Test Button par défaut-->
-    <a class="btn" href="#">Button</a>
+<head>
+  <meta charset="utf-8">
+  <title>Turtle System : A framework as cute and steady as the animal</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="icon" href="img/turtle-system-icon.svg">
+</head>
 
-    <!-- Test Button par défaut-->
-    <a class="btn-disabled" href="#">Button</a>
+<body>
+  <nav class="inline-flex width-100 bg-white">
+    <div class="wrapper flex-j-spacebetween flex-i-center width-100 my-m">
 
-  </body>
+      <img class="icon" src="img/turtle-system-icon.svg" />
+      <ul>
+        <li class="p-s">
+          <a href="#">Item 1</a>
+        </li>
+        <li class="p-s">
+          <a href="#">Item 2</a>
+        </li>
+        <li class="p-s">
+          <a href="#">Item 3</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <main class="wrapper">
+    <section class="card">
+      <h2 class="mb-s size-4">Typographie</h2>
+      <p class="mb-l">
+        En utilisant l'unité rem dans le framework, nous avons créé une échelle typographique qui peut être modifié en changeant simplement la taille de l'unité de base dans l'élément root. La typographie actuelle a une base de 1.6rem soit 16px.
+        Chaque lineheight est relative et va de 125% à 150% en prenant la font-size du texte comme base. Le Turtle System utilise la font-family Poppins, créé par Jonny Pinhorn et fourni à travers le service Google Fonts.
+
+      <div class="mb-m">
+        <h1 class="inline mr-s color-blacktransparent">Size 1</h1><span><code class="p-s mr-s">h1</code>ou<code class="p-s mx-s">.size1</code> 4.6rem (46px)</span>
+      </div>
+      <div class="mb-m">
+        <h2 class="inline mr-s color-blacktransparent">Size 2</h2><span><code class="p-s mr-s">h2</code>ou<code class="p-s  mx-s">.size2</code> 3.6rem (36px)</span>
+      </div>
+      <div class="mb-m">
+        <h3 class="inline mr-s color-blacktransparent">Size 3</h3><span><code class="p-s mr-s">h3</code>ou<code class="p-s  mx-s">.size3</code> 2.8rem (28px)</span>
+      </div>
+      <div class="mb-m">
+        <h4 class="inline mr-s color-blacktransparent">Size 4</h4><span><code class="p-s mr-s">h4</code>ou<code class="p-s  mx-s">.size4</code> 2.2rem (22px)</span>
+      </div>
+      <div class="mb-m">
+        <h5 class="inline mr-s color-blacktransparent">Size 5</h5><span><code class="p-s mr-s">h5</code>ou<code class="p-s  mx-s">.size5</code> 1.8rem (18px)</span>
+      </div>
+      <div class="mb-m">
+        <h6 class="inline mr-s color-blacktransparent">Size 6</h6><span><code class="p-s mr-s">h6</code>ou<code class="p-s  mx-s">.size6</code> 1.6rem (16px)</span>
+      </div>
+      <div class="mb-xl">
+        <h6 class="inline mr-s color-blacktransparent">Size 7</h6><span><code class="p-s  mx-s">.size7</code> 1.2rem (12px)</span>
+      </div>
+      <div class="mb-m">
+        <p class="inline mr-s color-blacktransparent body-large">Body Large</p><span><code class="p-s  mx-s">p .bodylarge</code> 1.8rem (12px)</span>
+      </div>
+      <div class="mb-m">
+        <p class="inline mr-s color-blacktransparent body-standard">Body Standard</p><span><code class="p-s  mx-s">p .bodystandard</code> 1.6rem (16px)</span>
+      </div>
+      <div class="mb-l">
+        <p class="inline mr-s color-blacktransparent body-small">Body Small</p><span><code class="p-s  mx-s">p .bodysmall</code> 1.2rem (12px)</span>
+      </div>
+      <h3 class="mb-s size-7 color-black">Exemple de code</h3>
+      <pre><code class="my-xxs">&lt;h1 class="size-5"&gt;Heading&lt;/h1&gt;
+&lt;p class="p body-large"&gt;&lt;/p&gt;</code></pre>
+    </section>
+
+
+    <section class="card">
+      <h2 class="mb-s size-4">Boutons</h2>
+      <p class="mb-l">
+        Le bouton est un des éléments d'interface les plus importants. Sur le Turtle System, il existe quatre styles : le style solide par défaut, <span><code class="p-xxs">outline</code></span>, <span><code class="p-xxs">ghost</code></span> ainsi que <span><code class="p-xxs">disabled</code></span>.
+
+      </p>
+
+      <h3 class="mb-s size-6 color-black">Solid</h3>
+      <div class="flex flex-w-wrap flex-gapx-m flex-gapy-m mb-l">
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn</h4>
+          <a class="btn" href="#">Standard Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-primary</h4>
+          <a class="btn btn-primary" href="#">Primary Button</a>
+        </div>
+
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-secondary</h4>
+          <a class="btn btn-secondary" href="#">Secondary Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-grey</h4>
+          <a class="btn btn-grey" href="#">Grey Button</a>
+        </div>
+      </div>
+
+      <h3 class="mb-s size-6 color-black">Outline</h3>
+      <div class="flex flex-w-wrap flex-gapx-m flex-gapy-m mb-l">
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ouline</h4>
+          <a class="btn btn-outline" href="#">Standard Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-outline-primary</h4>
+          <a class="btn btn-outline-primary" href="#">Primary Button</a>
+        </div>
+
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-outline-secondary</h4>
+          <a class="btn btn-outline-secondary" href="#">Secondary Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-outline-grey</h4>
+          <a class="btn btn-outline-grey" href="#">Grey Button</a>
+        </div>
+      </div>
+
+      <h3 class="mb-s size-6 color-black">Ghost</h3>
+      <div class="flex flex-w-wrap flex-gapx-m flex-gapy-m mb-l">
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ghost</h4>
+          <a class="btn btn-ghost" href="#">Standard Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ghost-primary</h4>
+          <a class="btn btn-ghost-primary" href="#">Primary Button</a>
+        </div>
+
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ghost-secondary</h4>
+          <a class="btn btn-ghost-secondary" href="#">Secondary Button</a>
+        </div>
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-ghost-grey</h4>
+          <a class="btn btn-ghost-grey" href="#">Grey Button</a>
+        </div>
+      </div>
+
+      <h3 class="mb-s size-6 color-black">Disabled</h3>
+      <div class="flex flex-w-wrap flex-gapx-m flex-gapy-m mb-l">
+        <div>
+          <h4 class="color-blacktransparent size-7">.btn .btn-disabled</h4>
+          <a class="btn btn-disabled" href="#">Disabled Button</a>
+        </div>
+      </div>
+
+      <h3 class="size-7 color-black">Exemple de code</h3>
+      <pre><code class="my-xxs">&lt;a class="btn btn-primary" href="#"&gt;Primary Button&lt;/a&gt;</code></pre>
+    </section>
+
+    <section class="card">
+      <h2 class="mb-s size-4">Blockquote</h2>
+      <p class="mb-l">
+        Le blockquote est une section reprenant une citation d'une autre source.
+      </p>
+      <blockquote class="mb-l">
+        Citation courte ou longue.
+      </blockquote>
+
+      <h3 class="size-7 color-black">Exemple de code</h3>
+      <pre><code class="my-xxs">&lt;blockquote&gt;Citation courte ou longue.&lt;/blockquote&gt;</code></pre>
+    </section>
+
+    <section class="card">
+      <h2 class="mb-s size-4">Listes</h2>
+      <p class="mb-l">
+        Les éléments ul, ol et dl permettent d'afficher des listes d'informations et de données. L'élément ul est affiché avec des cercles avant chaque item de la liste. L'élement ol est affiché avec des nombres avant chaque item de la liste.
+      </p>
+      <div class="grid mb-l">
+        <ul>
+          <li>
+            Unordered List Item
+          </li>
+          <li>
+            Unordered List Item
+          </li>
+        </ul>
+        <ol>
+          <li>
+            Ordered List Item
+          </li>
+          <li>
+            Ordered List Item
+          </li>
+        </ol>
+        <dl>
+          <dt>Description list item 1</dt>
+          <dd>Description list item 1.1</dd>
+        </dl>
+      </div>
+
+      <h3 class="size-7 color-black">Exemple de code</h3>
+      <pre><code class="my-xxs">&lt;ul&gt;
+  &lt;li&gt;
+    Unordered List Item
+  &lt;/li&gt;
+  &lt;li&gt;
+    Unordered List Item
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    Ordered List Item
+  &lt;/li&gt;
+  &lt;li&gt;
+    Ordered List Item
+  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Description list item 1&lt;/dt&gt;
+    &lt;dd&gt;Description list item 1.1&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+    </section>
+
+    <section class="card">
+      <h2 class="mb-s size-4">Formulaire</h2>
+      <p class="mb-l">
+    L'élément Form permet de créer un formulaire avec des éléments interactifs, donnant la possibilité à l'utilisateur de fournir des informations.
+      </p>
+
+        <form id="contact" action="" method="post">
+          <fieldset>
+            <input placeholder="Votre nom" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Votre adresse mail" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Votre numéro de téléphone" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Votre site internet" type="url" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Ecrivez votre message ici" tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" data-submit="...Envoyer">Envoyer</button>
+          </fieldset>
+
+        </form>
+
+
+
+    </section>
+
+    <section class="card">
+      <h2 class="mb-s size-4">Tableau</h2>
+      <p class="mb-l">
+        L'élément Table permet de représenter un tableau de données possédant plusieurs dimensions.
+      </p>
+      <table>
+
+      <tr>
+        <th>Un</th>
+        <th>Deux</th>
+        <th>Trois</th>
+      </tr>
+        <td>Un</td>
+        <td>Deux</td>
+        <td>Trois</td>
+      </tr>
+      <tr>
+        <td>Un</td>
+        <td>Deux</td>
+        <td>Trois</td>
+      </tr>
+
+      <tr>
+        <td>Un</td>
+        <td>Deux</td>
+        <td>Trois</td>
+      </tr>
+
+      <tr>
+        <td>Un</td>
+        <td>Deux</td>
+        <td>Trois</td>
+      </tr>
+    </table>
+
+    </section>
+
+    <section class="card">
+        <h2 class="mb-s size-4">Grid</h2>
+        <p class="mb-l">
+          Grid est un outil puissant, permettant de gérer des affichages en colonnage simplement. Pour le framework Turtle System, nous avons opté pour un système de grille flexible mettant à profit les unités  <span><code class="p-xxs">fr</code></span>, la fonction  <span><code class="p-xxs">repeat</code></span> ainsi les attributs <span><code class="p-xxs">minmax()</code></span> et <span><code class="p-xxs">auto-fit</code></span> . Cela permet de gérer l'adaptation aux différents supports sans media queries dans la grande majorité des cas. Ainsi, pour mettre un container en <span><code class="p-xxs">display : grid;</code></span>, il suffit de lui attriber la class <span class="bolder">.grid</span> et il hérite de la stylisation suivante :
+        </p>
+
+          <pre><code class="mt-xxs mb-s">.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: var(--m);
+}</code></pre>
+
+          <div class="grid mb-l">
+            <div class="card p-m">
+              <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+              <p>
+                Exemple
+              </p>
+          </div>
+
+          <div class="card p-m">
+            <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+            <p>
+              Exemple
+            </p>
+        </div>
+
+        <div class="card p-m">
+          <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+          <p>
+            Exemple
+          </p>
+      </div>
+
+      <div class="card p-m">
+        <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+        <p>
+          Exemple
+        </p>
+    </div>
+
+
+
+        </div>
+
+          <h3 class="mb-s size-5">Grid Item Span</h3>
+          <p class="mb-l">Pour chaque item de la grid, vous pouvez renseigner le nombre de colonnes ou de lignes sur lesquelles vous souhaitez que l'item s'étende en utilisant au choix :
+
+          <h4 class="color-blacktransparent size-7">.grid .grid-col-span-{nbDeColonnes}</h4>
+          <div class="grid mb-l">
+            <div class="card p-m">
+              <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+              <p>
+                Exemple
+              </p>
+          </div>
+
+          <div class="card p-m grid-col-span-two">
+            <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+            <p>
+              Exemple
+            </p>
+        </div>
+
+        <div class="card p-m">
+          <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+          <p>
+            Exemple
+          </p>
+      </div>
+
+      <div class="card p-m">
+        <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+        <p>
+          Exemple
+        </p>
+    </div>
+
+
+  </div>
+
+    <h4 class="color-blacktransparent size-7">.grid .grid-row-span-{nbDeLignes}</h4>
+    <div class="grid mb-l">
+      <div class="card p-m">
+        <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+        <p>
+          Exemple
+        </p>
+    </div>
+
+    <div class="card p-m">
+      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+      <p>
+        Exemple
+      </p>
+  </div>
+
+    <div class="card p-m grid-row-span-two">
+      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
+      <p>
+        Exemple
+      </p>
+  </div>
+
+  <div class="card p-m">
+    <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
+    <p>
+      Exemple
+    </p>
+</div>
+
+<div class="card p-m">
+  <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
+  <p>
+    Exemple
+  </p>
+</div></div>
+
+
+      </section>
+
+      <section class="card">
+          <h2 class="mb-s size-4">Flexbox</h2>
+          <p class="mb-l">
+            Flexbox.
+          </p>
+        </section>
+
+      <section class="card">
+          <h2 class="mb-s size-4">Code</h2>
+          <p class="mb-l">
+            La balise Code permet de faire apparaitre un morceau du code afin de le mettre en évidence dans une quote de fond grisé.
+          </p>
+
+          <pre><code class="my-xxs">&lt;code&gt;
+Insert your code here
+&lt;/code&gt;</code></pre>
+
+        </section>
+
+        <section class="card">
+            <h2 class="mb-s size-4">Utilities</h2>
+            <p class="mb-l">
+              Utilities.
+            </p>
+          </section>
+
+          <section class="card">
+              <h2 class="mb-s size-4">Breakpoints</h2>
+              <p class="mb-l">
+                Breakpoints.
+              </p>
+            </section>
+
+            <section class="card">
+                <h2 class="mb-s size-4">Personnaliser votre police</h2>
+                <p class="mb-l">
+                  Personnaliser votre police.
+                </p>
+              </section>
+
+              <section class="card">
+                  <h2 class="mb-s size-4">Changer les couleurs du thème</h2>
+                  <p class="mb-l">
+                    Personnaliser votre police.
+                  </p>
+
+              <pre><code class="my-xxs">&lt;&gt;
+--size1/2/3/4/5/6: Define the size of the typographie
+&lt;&gt;</code></pre>
+                </section>
+  </main>
+</body>
+
 </html>

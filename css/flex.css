@@ -1,0 +1,259 @@
+/*MADE BY ERWANN*/
+/*PARENTS PROPERTIES*/
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+/*FLEX DIRECTION*/
+.flex-d-col {
+  flex-direction: column;
+}
+
+.flex-d-row {
+  flex-direction: row;
+}
+
+.flex-d-rowrev {
+  flex-direction: row-reverse;
+}
+
+.flex-d-colrev {
+  flex-direction: column-reverse;
+}
+
+/*FLEX WRAP*/
+.flex-w-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-w-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-w-wraprev {
+  flex-wrap: wrap-reverse;
+}
+
+/*FLEX JUSTIFY CONTENT*/
+.flex-j-start {
+  justify-content: flex-start;
+}
+
+.flex-j-end {
+  justify-content: flex-end;
+}
+
+.flex-j-center {
+  justify-content: center;
+}
+
+.flex-j-spacebetween {
+  justify-content: space-between;
+}
+
+.flex-j-spacearound {
+  justify-content: space-around;
+}
+
+.flex-j-spaceevenly {
+  justify-content: space-evenly;
+}
+
+/*FLEX ALIGN ITEMS*/
+.flex-i-start{
+  align-items: flex-start;
+}
+
+.flex-i-end {
+  align-items: flex-end;
+}
+
+.flex-i-center {
+  align-items: center;
+}
+
+.flex-i-stretch {
+  align-items: stretch;
+}
+
+.flex-i-baseline {
+  align-items: baseline;
+}
+
+/*FLEX ALIGN CONTENT*/
+.flex-c-start {
+  align-content: flex-start;
+}
+
+.flex-c-end {
+  align-content: flex-end;
+}
+
+.flex-c-center {
+  align-content: center;
+}
+
+.flex-c-spacebetween {
+  align-content: space-between;
+}
+
+.flex-c-spacearound {
+  align-content: space-around;
+}
+
+.flex-c-stretch {
+  align-content: stretch;
+}
+
+/*FLEX GAP*/
+.flex-gap-xxs {
+  gap: var(--xxs);
+}
+
+.flex-gap-xs {
+  gap: var(--xs);
+}
+
+.flex-gap-s {
+  gap: var(--s);
+}
+
+.flex-gap-m {
+  gap: var(--m);
+}
+
+.flex-gap-l {
+  gap: var(--l);
+}
+
+.flex-gap-xl {
+  gap: var(--xl);
+}
+
+.flex-gap-xxl {
+  gap: var(--xxl);
+}
+
+/*FLEX GAP HORIZONTAL*/
+.flex-gapy-xxs {
+  row-gap: var(--xxs);
+}
+
+.flex-gapy-xs {
+  row-gap: var(--xs);
+}
+
+.flex-gapy-s {
+  row-gap: var(--s);
+}
+
+.flex-gapy-m {
+  row-gap: var(--m);
+}
+
+.flex-gapy-l {
+  row-gap: var(--l);
+}
+
+.flex-gapy-xl {
+  row-gap: var(--xl);
+}
+
+.flex-gapy-xxl {
+  row-gap: var(--xxl);
+}
+
+
+/*FLEX GAP VERTICAL*/
+.flex-gapx-xxs {
+  column-gap: var(--xxs);
+}
+
+.flex-gapx-xs {
+  column-gap: var(--xs);
+}
+
+.flex-gapx-s {
+  column-gap: var(--s);
+}
+
+.flex-gapx-m {
+  column-gap: var(--m);
+}
+
+.flex-gapx-l {
+  column-gap: var(--l);
+}
+
+.flex-gapx-xl {
+columnw-gap: var(--xl);
+}
+
+.flex-gapx-xxl {
+  column-gap: var(--xxl);
+}
+
+
+
+/*CHILD PROPERTIES*/
+
+/*FLEX GROW*/
+.flex-grow-one {
+  flex-grow: 1;
+}
+
+.flex-grow-two {
+  flex-grow: 2;
+}
+
+.flex-grow-three {
+  flex-grow: 3;
+}
+
+
+.flex-grow-four {
+  flex-grow: 4;
+}
+
+/*FLEX SHRINK*/
+.flex-shrink-one {
+  flex-shrink: 1;
+}
+
+.flex-shrink-two {
+  flex-shrink: 2;
+}
+
+.flex-grow-three {
+  flex-shrink: 3;
+}
+
+
+.flex-shrink-four {
+  flex-shrink: 4;
+}
+
+/*FLEX ALIGN SELF*/
+.flex-s-start{
+  align-self: flex-start;
+}
+
+.flex-s-end {
+  align-self: flex-end;
+}
+
+.flex-s-center {
+  align-self: center;
+}
+
+.flex-s-stretch {
+  align-self: stretch;
+}
+
+.flex-s-baseline {
+  align-self: baseline;
+}
