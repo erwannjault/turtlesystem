@@ -4,9 +4,10 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: var(--m);
   grid-template-rows : min-content;
+  grid-auto-flow: dense;
 }
 
-/*SPAN ROW*/
+/*COLUMN ROW*/
 .grid-col-span-one {
 grid-column: span 1;
 }
@@ -59,4 +60,35 @@ grid-row : span 5;
 
 .grid-flow-dense {
   grid-auto-flow : dense;
+}
+
+
+/*GRID GRAP*/
+.grid-grap-xxs {
+  gap : var(--xxs);
+}
+
+.grid-grap-xs
+{
+  gap : var(--xs);
+}
+.grid-grap-s
+{
+  gap : var(--s);
+}
+.grid-grap-m
+{
+  gap : var(--m);
+}
+.grid-grap-l
+{
+  gap : var(--l);
+}
+.grid-grap-xl
+{
+  gap : var(--xl);
+}
+.grid-grap-xxl
+{
+  gap : var(--xxl);
 }

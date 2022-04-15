@@ -1,5 +1,5 @@
 /*MADE BY ERWANN*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
 :root {
   /*DEFINE THE FONT FAMILY*/
   --fontFamily: Poppins;
@@ -46,7 +46,7 @@
   --light: 300;
   --regular: 400;
   --bold: 600;
-  --bolder: 800;
+  --bolder: 700;
   /*DEFINE THE TYPOGRAPHY VARIABLES*/
   --size1: 4.6rem;
   --size2: 3.6rem;

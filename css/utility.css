@@ -17,7 +17,7 @@
 }
 
 .width-33 {
-  width: 33%;
+  width: 33.33%;
 }
 
 .width-25 {
@@ -36,6 +36,15 @@
   height: 50vh;
 }
 
+.height-25{
+  height: 25vh;
+}
+
+
+.block {
+  display : block;
+}
+
 .inline {
   display: inline-block;
 }
@@ -50,4 +59,8 @@
 
 .sticky {
   position : sticky;
+}
+
+.fixed {
+  position: fixed;
 }
