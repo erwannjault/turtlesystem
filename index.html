@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <title>Turtle System : A framework as cute and steady as the animal</title>
   <link rel="stylesheet" href="css/master.css">
-  <link rel="icon" href="img/turtle-system-icon.svg">
+  <link rel="icon" href="img/turtle-system-favicon.svg">
 </head>
 
-<body>
-  <nav class="inline-flex width-100 bg-white">
+<body id="top">
+  <nav class="inline-flex width-100 bg-white sticky" style ="top:0; box-shadow :">
     <div class="wrapper flex-j-spacebetween flex-i-center width-100 my-m">
 
-      <img class="icon" src="img/turtle-system-icon.svg" />
+      <a href="#top"><img class="icon" src="img/turtle-system-icon.svg" /></a>
       <ul>
         <li class="p-s">
           <a href="#">Item 1</a>
@@ -27,7 +27,7 @@
 
     </div>
   </nav>
-  <main class="wrapper">
+  <main class="wrapper" id="documentation">
     <section class="card">
       <h2 class="mb-s size-4">Typographie</h2>
       <p class="mb-l">
@@ -56,17 +56,19 @@
         <h6 class="inline mr-s color-blacktransparent">Size 7</h6><span><code class="p-s  mx-s">.size7</code> 1.2rem (12px)</span>
       </div>
       <div class="mb-m">
-        <p class="inline mr-s color-blacktransparent body-large">Body Large</p><span><code class="p-s  mx-s">p .bodylarge</code> 1.8rem (12px)</span>
+        <p class="inline mr-s color-blacktransparent body-standard">Body Standard</p><span><code class="p-s mr-s">p</code>ou<code class="p-s mx-s">.bodystandard</code> 1.6rem (16px)</span>
       </div>
       <div class="mb-m">
-        <p class="inline mr-s color-blacktransparent body-standard">Body Standard</p><span><code class="p-s  mx-s">p .bodystandard</code> 1.6rem (16px)</span>
+        <p class="inline mr-s color-blacktransparent body-large">Body Large</p><span><code class="p-s  mx-s">.bodylarge</code> 1.8rem (18px)</span>
       </div>
       <div class="mb-l">
-        <p class="inline mr-s color-blacktransparent body-small">Body Small</p><span><code class="p-s  mx-s">p .bodysmall</code> 1.2rem (12px)</span>
+        <p class="inline mr-s color-blacktransparent body-small">Body Small</p><span><code class="p-s  mx-s">.bodysmall</code> 1.2rem (12px)</span>
       </div>
       <h3 class="mb-s size-7 color-black">Exemple de code</h3>
       <pre><code class="my-xxs">&lt;h1 class="size-5"&gt;Heading&lt;/h1&gt;
-&lt;p class="p body-large"&gt;&lt;/p&gt;</code></pre>
+
+&lt;p&gt;Paragraphe Standard&lt;/p&gt;
+&lt;p class="body-large"&gt;Paragraphe avec une fonte plus large&lt;/p&gt;</code></pre>
     </section>
 
 
@@ -173,46 +175,46 @@
       <div class="grid mb-l">
         <ul>
           <li>
-            Unordered List Item
+            Item d'une liste non-ordonnée
           </li>
           <li>
-            Unordered List Item
+            Item d'une liste non-ordonnée
           </li>
         </ul>
         <ol>
           <li>
-            Ordered List Item
+            Item d'une liste ordonnée
           </li>
           <li>
-            Ordered List Item
+            Item d'une liste ordonnée
           </li>
         </ol>
         <dl>
-          <dt>Description list item 1</dt>
-          <dd>Description list item 1.1</dd>
+          <dt>Item d'une liste de description 1</dt>
+          <dd>Item d'une liste de description 1.1</dd>
         </dl>
       </div>
 
       <h3 class="size-7 color-black">Exemple de code</h3>
       <pre><code class="my-xxs">&lt;ul&gt;
   &lt;li&gt;
-    Unordered List Item
+    Item d'une liste non-ordonnée
   &lt;/li&gt;
   &lt;li&gt;
-    Unordered List Item
+    Item d'une liste non-ordonnée
   &lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol&gt;
   &lt;li&gt;
-    Ordered List Item
+    Item d'une liste ordonnée
   &lt;/li&gt;
   &lt;li&gt;
-    Ordered List Item
+    Item d'une liste ordonnée
   &lt;/li&gt;
 &lt;/ol&gt;
 &lt;dl&gt;
-  &lt;dt&gt;Description list item 1&lt;/dt&gt;
-    &lt;dd&gt;Description list item 1.1&lt;/dd&gt;
+  &lt;dt&gt;Item d'une liste de description 1&lt;/dt&gt;
+    &lt;dd&gt;Item d'une liste de description 1.1&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
     </section>
 
@@ -224,7 +226,7 @@
 
         <form id="contact" action="" method="post">
           <fieldset>
-            <input placeholder="Votre nom" type="text" tabindex="1" required autofocus>
+            <input placeholder="Votre nom" type="text" tabindex="1" required>
           </fieldset>
           <fieldset>
             <input placeholder="Votre adresse mail" type="email" tabindex="2" required>
@@ -238,24 +240,20 @@
           <fieldset>
             <textarea placeholder="Ecrivez votre message ici" tabindex="5" required></textarea>
           </fieldset>
-          <fieldset>
+          <fieldset class="mb-l">
             <button name="submit" type="submit" data-submit="...Envoyer">Envoyer</button>
           </fieldset>
 
         </form>
 
         <h3 class="size-7 color-black">Exemple de code</h3>
-        <pre><code class="my-xxs">
-  &lt;div&gt;
-    &lt;form&gt;
-      &lt;input type="text" name="email" placeholder="Email"&gt;&lt;/input&gt;
-      &lt;input type="text" name="name" placeholder="Name"&gt;&lt;/input&gt;
-      &lt;input type="text" id="feedback-phone" name="phone" placeholder="Phone number"&gt;&lt;/input&gt;
-      &lt;button type="submit"&gt;Register&lt;/button&gt;
-    &lt;/form&gt;
-  &lt;/div&gt;
-
-    </code></pre>
+        <pre><code class="my-xxs">&lt;div&gt;
+&lt;form&gt;
+  &lt;input type="text" name="email" placeholder="Email"&gt;&lt;/input&gt;
+  &lt;input type="text" name="name" placeholder="Name"&gt;&lt;/input&gt;
+  &lt;input type="text" id="feedback-phone" name="phone" placeholder="Phone number"&gt;&lt;/input&gt;
+  &lt;button type="submit"&gt;Register&lt;/button&gt;
+&lt;/form&gt;&lt;/div&gt;</code></pre>
 
     </section>
 
@@ -330,145 +328,363 @@
     <section class="card">
         <h2 class="mb-s size-4">Grid</h2>
         <p class="mb-l">
-          Grid est un outil puissant, permettant de gérer des affichages en colonnage simplement. Pour le framework Turtle System, nous avons opté pour un système de grille flexible mettant à profit les unités  <span><code class="p-xxs">fr</code></span>, la fonction  <span><code class="p-xxs">repeat</code></span> ainsi les attributs <span><code class="p-xxs">minmax()</code></span> et <span><code class="p-xxs">auto-fit</code></span> . Cela permet de gérer l'adaptation aux différents supports sans media queries dans la grande majorité des cas. Ainsi, pour mettre un container en <span><code class="p-xxs">display : grid;</code></span>, il suffit de lui attriber la class <span class="bolder">.grid</span> et il hérite de la stylisation suivante :
+          Grid est un outil puissant, permettant de gérer des affichages en colonnage simplement. Pour le framework Turtle System, nous avons opté pour un système de grille flexible mettant à profit les unités  <span><code class="p-xxs">fr</code></span>, la fonction  <span><code class="p-xxs">repeat</code></span> ainsi les attributs <span><code class="p-xxs">minmax()</code></span> et <span><code class="p-xxs">auto-fit</code></span> . Cela permet de gérer l'adaptation aux différents supports sans media queries. Ainsi, pour mettre un container en <span><code class="p-xxs">display : grid;</code></span>, il suffit de lui attriber la class <span><code class="p-xxs">.grid</code></span> et il hérite de la stylisation suivante :
         </p>
 
-          <pre><code class="mt-xxs mb-s">.grid {
+          <pre><code class="mt-xxs mb-m">.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: var(--m);
 }</code></pre>
 
+      <p class="mb-l">
+        Le <span><code class="p-xxs">grid-auto-flow</code></span> est défini par défaut sur <span><code class="p-xxs">grid-auto-flow : dense</code></span>, ce qui permet le réagencement des items pour garder la grille le plus intacte possible, sans espacement étrange. Il suffit donc de créer un conteneur avec la classe .grid, mettre autant de div que l'on souhaite et le colonnage se fait tout seul.
+      </p>
+<h4 class="color-blacktransparent size-7">.grid</h4>
           <div class="grid mb-l">
             <div class="card p-m">
               <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
               <p>
-                Exemple
+                Card
               </p>
           </div>
 
           <div class="card p-m">
             <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
             <p>
-              Exemple
+              Card
             </p>
         </div>
 
         <div class="card p-m">
           <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
           <p>
-            Exemple
+            Card
           </p>
       </div>
 
       <div class="card p-m">
         <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
         <p>
-          Exemple
+          Card
         </p>
     </div>
-
-
-
         </div>
 
+            <h3 class="size-7 color-black">Exemple de code</h3>
+            <pre><code class="my-xxs mb-xl">&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+    Card
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+    Card
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+    Card
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+    Card
+  &lt;/p&gt;
+&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+
           <h3 class="mb-s size-5">Grid Item Span</h3>
-          <p class="mb-l">Pour chaque item de la grid, vous pouvez renseigner le nombre de colonnes ou de lignes sur lesquelles vous souhaitez que l'item s'étende en utilisant au choix :
+          <p class="mb-l">Pour chaque item de la grid, vous pouvez renseigner le nombre de colonnes ou de lignes sur lesquelles vous souhaitez que l'item s'étende en utilisant sur sa balise les classes suivantes au choix :</p>
 
           <h4 class="color-blacktransparent size-7">.grid .grid-col-span-{nbDeColonnes}</h4>
-          <div class="grid mb-l">
+          <div class="grid grid-gap-m mb-s">
             <div class="card p-m">
               <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
               <p>
-                Exemple
+
               </p>
           </div>
 
           <div class="card p-m grid-col-span-two">
             <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
             <p>
-              Exemple
+              .grid-col-span-two
             </p>
         </div>
 
         <div class="card p-m">
           <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
           <p>
-            Exemple
+
           </p>
       </div>
 
       <div class="card p-m">
         <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
         <p>
-          Exemple
-        </p>
-    </div>
-    <div class="card p-m">
-      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
-      <p>
-        Exemple
-      </p>
-    </div>
 
-    <div class="card p-m">
-      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
-      <p>
-        Exemple
-      </p>
-    </div>
-
-    <div class="card p-m">
-    <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
-    <p>
-      Exemple
-    </p>
-    </div>  <div class="card p-m">
-        <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
-        <p>
-          Exemple
-        </p>
-    </div>
-
-  </div>
-
-    <h4 class="color-blacktransparent size-7">.grid .grid-row-span-{nbDeLignes}</h4>
-    <div class="grid mb-l">
-      <div class="card p-m">
-        <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
-        <p>
-          Exemple
         </p>
     </div>
 
     <div class="card p-m">
-      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
       <p>
-        Exemple
-      </p>
-  </div>
 
-    <div class="card p-m grid-row-span-two">
-      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
-      <p>
-        Exemple
       </p>
   </div>
 
   <div class="card p-m">
-    <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
+    <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
     <p>
-      Exemple
+
     </p>
 </div>
 
 <div class="card p-m">
-  <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85"/>
+  <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
   <p>
-    Exemple
-  </p>
-</div></div>
 
+  </p>
+</div>
+
+<div class="card p-m">
+<img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+<p>
+
+</p>
+</div>
+
+<div class="card p-m">
+<img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+<p>
+
+</p>
+</div>
+  </div>
+  <h3 class="size-7 color-black">Exemple de code</h3>
+  <pre><code class="my-xxs mb-xl">&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+  Card
+  &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;card p-m grid-col-span-two&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+  Card sur deux colonnes
+  &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+  Card
+  &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+  Card
+  &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+  Card
+  &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+  Card
+  &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+  Card
+  &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;card p-m&quot;&gt;
+  &lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+  &lt;p&gt;
+  Card
+  &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;/div&gt;</code></pre>
+
+
+    <h4 class="color-blacktransparent size-7">.grid .grid-row-span-{nbDeLignes}</h4>
+    <div class="grid grid-gap-m mb-s">
+      <div class="card p-m">
+        <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+        <p>
+
+        </p>
+    </div>
+
+    <div class="card p-m grid-row-span-two">
+      <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+      <p>
+        .grid-row-span-two
+      </p>
+  </div>
+
+  <div class="card p-m">
+    <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+    <p>
+
+    </p>
+</div>
+
+<div class="card p-m">
+  <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+  <p>
+
+  </p>
+</div>
+
+<div class="card p-m">
+<img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+<p>
+
+</p>
+</div>
+
+<div class="card p-m">
+<img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+<p>
+
+</p>
+</div>
+
+<div class="card p-m">
+<img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+<p>
+
+</p>
+</div>
+
+<div class="card p-m">
+<img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+<p>
+
+</p>
+</div>
+
+<div class="card p-m">
+<img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
+<p>
+
+</p>
+</div>
+
+</div>
+
+<h3 class="size-7 color-black">Exemple de code</h3>
+<pre><code class="my-xxs mb-xl">&lt;div class=&quot;grid&quot;&gt;
+&lt;div class=&quot;card p-m&quot;&gt;
+&lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+&lt;p&gt;
+Card
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m grid-row-span-two&quot;&gt;
+&lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+&lt;p&gt;
+Card sur deux lignes
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m&quot;&gt;
+&lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+&lt;p&gt;
+Card
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m&quot;&gt;
+&lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+&lt;p&gt;
+Card
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m&quot;&gt;
+&lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+&lt;p&gt;
+Card
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m&quot;&gt;
+&lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+&lt;p&gt;
+Card
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m&quot;&gt;
+&lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+&lt;p&gt;
+Card
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card p-m&quot;&gt;
+&lt;img class=&quot;mb-m&quot; src=&quot;#; /&gt;
+&lt;p&gt;
+Card
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+
+<h3 class="mb-s size-5">Grid Gap</h3>
+<p class="mb-l">Vous pouvez définir les écarts entre chaque item grâce aux classes suivantes :</p>
+
+<ul>
+  <li class=mb-xs>
+    <span><code class="p-xxs">.grid-gap-xxs</code></span>
+  </li>
+  <li class=mb-xs>
+    <span><code class="p-xxs">.grid-gap-xs</code></span>
+  </li>
+  <li class=mb-xs>
+    <span><code class="p-xxs">.grid-gap-s</code></span>
+  </li>
+  <li class=mb-xs>
+    <span><code class="p-xxs">.grid-gap-m</code></span>
+  </li>
+  <li class=mb-xs>
+    <span><code class="p-xxs">.grid-gap-l</code></span>
+  </li>
+  <li class=mb-xs>
+    <span><code class="p-xxs">.grid-gap-xl</code></span>
+  </li>
+  <li class=mb-xs>
+    <span><code class="p-xxs">.grid-gap-xxl</code></span>
+  </li>
+</ul>
 
       </section>
 
@@ -480,8 +696,249 @@
 
           <h3 class="mb-s size-5">Parent Container</h3>
           <p class="mb-l">
-            Vous commencez par englober votre contenu par une balise de votre choix et vous lui appliquer la classe
+            Vous commencez par englober votre contenu par une balise de votre choix et vous lui appliquez la classe <span><code class="p-xxs">.flex</code></span> ou <span><code class="p-xxs">.inline-flex</code></span>. Pour chaque propriété de Flexbox listé sur <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">cette page ci</a>, il existe une classe associée :
           </p>
+
+          <div class="flex mb-l">
+
+
+            <div class="card p-m">
+              <h3 class="mb-s size-6 color-blacktransparent">Direction</h3>
+              <li class=mb-s>
+                Column : <span><code class="p-xxs">.flex-d-col</code></span>
+              </li>
+              <li class=mb-s>
+                Row : <span><code class="p-xxs">.flex-d-row</code></span>
+              </li>
+              <li class=mb-s>
+                Row-reverse : <span><code class="p-xxs">.flex-d-rowrev</code></span>
+              </li>
+              <li class=mb-s>
+                Column-reverse : <span><code class="p-xxs">.flex-d-colrev</code></span>
+              </li>
+            </div>
+
+            <div class="card p-m">
+              <h3 class="mb-s size-6 color-blacktransparent">Wrap</h3>
+              <li class=mb-s>
+                Nowrap : <span><code class="p-xxs">.flex-w-nowrap</code></span>
+              </li>
+              <li class=mb-s>
+                Wrap : <span><code class="p-xxs">.flex-w-wrap</code></span>
+              </li>
+              <li class=mb-s>
+                Wrap-reverse : <span><code class="p-xxs">.flex-w-wraprev</code></span>
+              </li>
+            </div>
+
+            <div class="card p-m">
+              <h3 class="mb-s size-6 color-blacktransparent">Justify Content</h3>
+              <li class=mb-s>
+                Flex-start : <span><code class="p-xxs">.flex-j-start</code></span>
+              </li>
+              <li class=mb-s>
+                Flex-end : <span><code class="p-xxs">.flex-j-end</code></span>
+              </li>
+              <li class=mb-s>
+                Center : <span><code class="p-xxs">.flex-j-center</code></span>
+              </li>
+              <li class=mb-s>
+                Space-between : <span><code class="p-xxs">.flex-j-spacebetween</code></span>
+              </li>
+              <li class=mb-s>
+                Space-around : <span><code class="p-xxs">.flex-j-spacearound</code></span>
+              </li>
+              <li class=mb-s>
+                Space-evenly : <span><code class="p-xxs">.flex-j-spaceevenly</code></span>
+              </li>
+            </div>
+
+            <div class="card p-m">
+              <h3 class="mb-s size-6 color-blacktransparent">Align Items</h3>
+              <li class=mb-s>
+                Flex-start : <span><code class="p-xxs">.flex-i-start</code></span>
+              </li>
+              <li class=mb-s>
+                Flex-end : <span><code class="p-xxs">.flex-i-end</code></span>
+              </li>
+              <li class=mb-s>
+                Center : <span><code class="p-xxs">.flex-i-center</code></span>
+              </li>
+              <li class=mb-s>
+                Stretch : <span><code class="p-xxs">.flex-i-stretch</code></span>
+              </li>
+              <li class=mb-s>
+                Baseline : <span><code class="p-xxs">.flex-i-baseline</code></span>
+              </li>
+            </div>
+
+            <div class="card p-m">
+              <h3 class="mb-s size-6 color-blacktransparent">Align Content</h3>
+              <li class=mb-s>
+                Flex-start : <span><code class="p-xxs">.flex-c-start</code></span>
+              </li>
+              <li class=mb-s>
+                Flex-end : <span><code class="p-xxs">.flex-c-end</code></span>
+              </li>
+              <li class=mb-s>
+                Center : <span><code class="p-xxs">.flex-c-center</code></span>
+              </li>
+              <li class=mb-s>
+                Space-between : <span><code class="p-xxs">.flex-c-spacebetween</code></span>
+              </li>
+              <li class=mb-s>
+                Space-around : <span><code class="p-xxs">.flex-c-spacearound</code></span>
+              </li>
+              <li class=mb-s>
+                Stretch : <span><code class="p-xxs">.flex-c-stretch</code></span>
+              </li>
+            </div>
+          </div>
+
+            <div class="card p-m mb-l">
+              <h3 class="mb-s size-6 color-blacktransparent">Gap</h3>
+              <div class="flex">
+
+                  <div>
+                      <h4 class="size-7 color-blacktransparent mb-s">Global</h4>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gap-xxs</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gap-xs</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gap-s</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gap-m</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gap-l</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gap-xl</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gap-xxl</code></span>
+                    </li>
+                </div>
+
+                <div>
+                    <h4 class="size-7 color-blacktransparent mb-s">Horizontal</h4>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gapx-xxs</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gapx-xs</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gapx-s</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gapx-m</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gapx-l</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gapx-xl</code></span>
+                    </li>
+                    <li class=mb-xs>
+                      <span><code class="p-xxs">.flex-gapx-xxl</code></span>
+                    </li>
+              </div>
+              <div>
+                  <h4 class="size-7 color-blacktransparent mb-s">Vertical</h4>
+                  <li class=mb-xs>
+                    <span><code class="p-xxs">.flex-gapy-xxs</code></span>
+                  </li>
+                  <li class=mb-xs>
+                    <span><code class="p-xxs">.flex-gapy-xs</code></span>
+                  </li>
+                  <li class=mb-xs>
+                    <span><code class="p-xxs">.flex-gapy-s</code></span>
+                  </li>
+                  <li class=mb-xs>
+                    <span><code class="p-xxs">.flex-gapy-m</code></span>
+                  </li>
+                  <li class=mb-xs>
+                    <span><code class="p-xxs">.flex-gapy-l</code></span>
+                  </li>
+                  <li class=mb-xs>
+                    <span><code class="p-xxs">.flex-gapy-xl</code></span>
+                  </li>
+                  <li class=mb-xs>
+                    <span><code class="p-xxs">.flex-gapy-xxl</code></span>
+                  </li>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <h3 class="mb-s size-5">Child Item</h3>
+          <p class="mb-l">
+            Les items disposés dans un conteneur parent peuvent bénéficer aussi profiter d'un ajout de classe, notamment :
+          </p>
+
+          <div class="flex">
+
+
+            <div class="card p-m">
+              <h3 class="mb-s size-6 color-blacktransparent">Grow</h3>
+              <li class=mb-s>
+                <span><code class="p-xxs">.flex-grow-none</code></span>
+              </li>
+              <li class=mb-s>
+                <span><code class="p-xxs">.flex-grow-one</code></span>
+              </li>
+              <li class=mb-s>
+                <span><code class="p-xxs">.flex-grow-two</code></span>
+              </li>
+              <li class=mb-s>
+                <span><code class="p-xxs">.flex-grow-three</code></span>
+              </li>
+              <li class=mb-s>
+                <span><code class="p-xxs">.flex-grow-four</code></span>
+              </li>
+            </div>
+
+            <div class="card p-m">
+              <h3 class="mb-s size-6 color-blacktransparent">Shrink</h3>
+              <li class=mb-s>
+                <span><code class="p-xxs">.flex-shrink-one</code></span>
+              </li>
+              <li class=mb-s>
+                <span><code class="p-xxs">.flex-shrink-two</code></span>
+              </li>
+              <li class=mb-s>
+                <span><code class="p-xxs">.flex-shrink-three</code></span>
+              </li>
+              <li class=mb-s>
+                <span><code class="p-xxs">.flex-shrink-four</code></span>
+              </li>
+            </div>
+
+            <div class="card p-m">
+              <h3 class="mb-s size-6 color-blacktransparent">Align Self</h3>
+              <li class=mb-s>
+                Flex-start : <span><code class="p-xxs">.flex-s-start</code></span>
+              </li>
+              <li class=mb-s>
+                Flex-end : <span><code class="p-xxs">.flex-s-end</code></span>
+              </li>
+              <li class=mb-s>
+                Center : <span><code class="p-xxs">.flex-s-center</code></span>
+              </li>
+              <li class=mb-s>
+                Stretch : <span><code class="p-xxs">.flex-s-stretch</code></span>
+              </li>
+              <li class=mb-s>
+                Baseline : <span><code class="p-xxs">.flex-s-baseline</code></span>
+              </li>
+            </div>
+
+          </div>
 
         </section>
 
@@ -500,16 +957,253 @@ Insert your code here
         <section class="card">
             <h2 class="mb-s size-4">Utilities</h2>
             <p class="mb-l">
-              Utilities.
+              Les Utilities sont des classes vous permettant de gérer la position de vos éléments, leur largeur, leur hauteur et la façon dont ils s'affichent. Ainsi, les classes suivantes sont applicables sur tout élément HTML :
             </p>
+            <div class="grid">
+
+              <div class="card">
+                <h3 class="mb-xs size-5 color-blacktransparent">Largeur</h3>
+                <p class="mb-s">
+                  (Relative au conteneur)
+                </p>
+                <ul>
+                  <li class="mb-s">
+                    100% : <span><code class="p-xxs">.width-100</code></span>
+                  </li>
+                  <li class="mb-s">
+                    75% : <span><code class="p-xxs">.width-75</code></span>
+                  </li>
+                  <li class="mb-s">
+                    66% : <span><code class="p-xxs">.width-66</code></span>
+                  </li>
+                  <li class="mb-s">
+                    50% : <span><code class="p-xxs">.width-50</code></span>
+                  </li>
+                  <li class="mb-s">
+                    33% : <span><code class="p-xxs">.width-33</code></span>
+                  </li>
+                  <li class="mb-s">
+                    25% : <span><code class="p-xxs">.width-25</code></span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <h3 class="mb-xs size-5 color-blacktransparent">Hauteur</h3>
+                <p class="mb-s">
+                  (Relative au viewport)
+                </p>
+                <ul>
+                  <li class="mb-s">
+                    100% : <span><code class="p-xxs">.height-100</code></span>
+                  </li>
+                  <li class="mb-s">
+                    75% : <span><code class="p-xxs">.height-75</code></span>
+                  </li>
+
+                  <li class="mb-s">
+                    50% : <span><code class="p-xxs">.height-75</code></span>
+                  </li>
+
+                  <li class="mb-s">
+                    25% : <span><code class="p-xxs">.height-75</code></span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <h3 class="mb-xs size-5 color-blacktransparent">Positionnement</h3>
+                <ul>
+                  <li class="mb-s">
+                    Absolute : <span><code class="p-xxs">.absolute</code></span>
+                  </li>
+                  <li class="mb-s">
+                    Relative : <span><code class="p-xxs">.relative</code></span>
+                  </li>
+                  <li class="mb-s">
+                    Fixed : <span><code class="p-xxs">.fixed</code></span>
+                  </li>
+                  <li class="mb-s">
+                    Sticky : <span><code class="p-xxs">.sticky</code></span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card">
+                <h3 class="mb-xs size-5 color-blacktransparent">Display</h3>
+                <ul>
+                  <li class="mb-s">
+                    Block : <span><code class="p-xxs">.block</code></span>
+                  </li>
+                  <li class="mb-s">
+                    Inline-block : <span><code class="p-xxs">.inline-block</code></span>
+                  </li>
+                  <li class="mb-s">
+                    Grid : <span><code class="p-xxs">.grid</code></span>
+                  </li>
+                  <li class="mb-s">
+                    Flex : <span><code class="p-xxs">.flex</code></span>
+                  </li>
+                  <li class="mb-s">
+                    Inline-flex : <span><code class="p-xxs">.inline-flex</code></span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
           </section>
 
+
           <section class="card">
-              <h2 class="mb-s size-4">Breakpoints</h2>
-              <p class="mb-l">
-                Breakpoints.
-              </p>
+              <h2 class="mb-s size-4">Spacing</h2>
+              <p class="mb-m">
+                Les classes de <i>spacing</i> ou d'espacement permettent de gérer les marges internes et externes entre vos différents composants d'interface. Ils sont construits ainsi : <span><code class="p-xxs">type de marge</code></span> <span><code class="p-xxs">axe ou position</code></span>-<span><code class="p-xxs">valeur de la marge</code></span>. </p>
+
+                <p class="mb-m">
+                  Le type de marge peut être <span><code class="p-xxs">m</code></span> pour attribuer des margins (marges externes) et <span><code class="p-xxs">p</code></span> pour attribuer des paddings (marges internes).
+                </p>
+
+                <h3 class="size-6 color-blacktransparent mb-s">Exemples</h3>
+                <div class="flex mb-xl">
+                  <div class="bg-lightgrey">
+                    <div class="card m-l p-s">
+                    <p class="mb-s">
+                      Margin
+                    </p>
+                    <code class="p-xxs">.m-m</code>
+                  </div>
+                </div>
+                <div class="bg-lightgrey flex flex-i-center">
+                  <div class="card p-l m-s">
+                    <p class="mb-s">
+                      Padding
+                    </p>
+                    <code class="p-xxs">.p-m</code>
+                  </div>
+                </div></div>
+
+                <p class="mb-m">
+                  Les marges ou les paddings peuvent être globaux, uniquement à l'horizontal/vertical ou bien uniquement en haut, bas, gauche ou droite. Ainsi, l'axe ou la position peuvent prendre les valeurs suivantes :
+                </p>
+
+                <ul class="flex mb-m">
+                  <div class="card flex-grow-none">
+                    <li class="mb-s">
+                  Global - Par défaut.
+                  </li>
+                  <li class="mb-s">
+                  Horizontal : <span><code class="p-xxs">x</code></span>
+                  </li>
+                  <li class="mb-s">
+                  Vertical : <span><code class="p-xxs">y</code></span>
+                </li>
+
+              </div>
+              <div class="card flex-grow-none">
+
+                  <li class="mb-s">
+                  Haut/Top <span><code class="p-xxs">t</code></span>
+                  </li>
+                  <li class="mb-s">
+                  Bas/Bottom <span><code class="p-xxs">b</code></span>
+                  </li>
+                  <li class="mb-s">
+                  Gauche/Left <span><code class="p-xxs">l</code></span>
+                  </li>
+                  <li class="mb-s">
+                  Droite/Right <span><code class="p-xxs">r</code></span>
+                  </li>
+
+                </div>
+                </ul>
+
+                <h3 class="size-6 color-blacktransparent mb-s">Exemples</h3>
+                <div class="flex mb-s">
+                  <div class="bg-lightgrey">
+                    <div class="card m-s ml-l p-s">
+                    <p class="mb-s">
+                      Margin à gauche Uniquement
+                    </p>
+                    <code class="p-xxs">.ml-m</code>
+                  </div>
+                </div>
+                <div class="bg-lightgrey">
+                  <div class="card m-s p-s pr-xxl">
+                      <p class="mb-s">
+                        Padding à droite Uniquement
+                      </p>
+                      <code class="p-xxs">.pr-m</code>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="flex">
+                    <div class="bg-lightgrey mb-s">
+                    <div class="card m-s my-l p-s">
+                    <p class="mb-s">
+                      Margin Vertical
+                    </p>
+                    <code class="p-xxs">.my-m</code>
+                  </div></div></div>
+
+                <div class="flex mb-l">
+                  <div class="bg-lightgrey">
+                  <div class="card m-s p-s px-xxl">
+                      <p class="mb-s">
+                        Padding Horizontal
+                      </p>
+                      <code class="p-xxs">.px-m</code>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <p class="mb-m">
+                  Les valeurs de marge vont du <span><code class="p-xxs">xxs</code></span> au <span><code class="p-xxs">xxl</code></span>
+              . Ainsi, les valeurs suivantes peuvent être définies :   </p>
+
+                <ul class="flex mb-m">
+                    <div class="card flex-grow-none">
+                      <li class="mb-s">
+                  Extra extra Small : <span><code class="p-xxs">xxs</code></span>
+                    </li>
+                    <li class="mb-s">
+                  Extra Small :<span><code class="p-xxs">xs</code></span>
+                    </li>
+                    <li class="mb-s">
+                  Small : <span><code class="p-xxs">s</code></span>
+                    </li>
+                    <li class="mb-s">
+                  Medium/Standard : <span><code class="p-xxs">m</code></span>
+                    </li>
+                    <li class="mb-s">
+                  Large : <span><code class="p-xxs">l</code></span>
+                    </li>
+                    <li class="mb-s">
+                  Extra Large : <span><code class="p-xxs">xl</code></span>
+                    </li>
+                    <li class="mb-s">
+                  Extra extra Large : <span><code class="p-xxs">xxl</code></span>
+                    </li>
+                  </div>
+                  </ul>
+
+                  <p class="mb-m">
+                    Les classes peuvent bien sûr être combinées pour créer le layout de notre choix. Typiquement, si on souhaite une card avec des margins horizontales moyennes, verticales larges ainsi que des paddings horizontaux larges et verticaux moyens, on obtiendrait ceci :</p>
+
+                    <div class="flex mb-m">
+                      <div class="bg-lightgrey">
+                      <div class="card mx-m my-l px-l py-m">
+                        Une Card avec des margins et paddings utilisant le plein potentiel du système de spacing du Turtle System
+                      </div>
+                    </div>
+                    </div>
+
+                    <h3 class="mb-s size-7 color-black">Exemple de code</h3>
+                    <pre><code>&lt;div class=&quot;card mx-m my-l px-l py-m&quot;&gt; Un petit snippet de code &lt;/div&gt;</code></pre>
+
             </section>
+
 
             <section class="card">
                 <h2 class="mb-s size-4">Personnaliser votre police</h2>
@@ -528,6 +1222,20 @@ Insert your code here
 --size1/2/3/4/5/6: Define the size of the typographie
 &lt;&gt;</code></pre>
                 </section>
+
+                <section class="card">
+                    <h2 class="mb-s size-4">Couleurs & couleurs de fond</h2>
+                    <p class="mb-l">
+                      Couleurs & couleurs de fond
+                    </p>
+                  </section>
+
+                  <section class="card">
+                      <h2 class="mb-s size-4">Installation</h2>
+                      <p class="mb-l">
+                        Couleurs & couleurs de fond
+                      </p>
+                    </section>
   </main>
 </body>
 
