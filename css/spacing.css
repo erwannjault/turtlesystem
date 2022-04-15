@@ -447,3 +447,93 @@
 .pr-xxl {
   padding-right: var(--xxl);
 }
+
+
+
+/*GAP*/
+.gap-xxs {
+  gap: var(--xxs);
+}
+
+.gap-xs {
+  gap: var(--xs);
+}
+
+.gap-s {
+  gap: var(--s);
+}
+
+.gap-m {
+  gap: var(--m);
+}
+
+.gap-l {
+  gap: var(--l);
+}
+
+.gap-xl {
+  gap: var(--xl);
+}
+
+.gap-xxl {
+  gap: var(--xxl);
+}
+
+/*GAP HORIZONTAL*/
+.gapy-xxs {
+  row-gap: var(--xxs);
+}
+
+.gapy-xs {
+  row-gap: var(--xs);
+}
+
+.gapy-s {
+  row-gap: var(--s);
+}
+
+.gapy-m {
+  row-gap: var(--m);
+}
+
+.gapy-l {
+  row-gap: var(--l);
+}
+
+.gapy-xl {
+  row-gap: var(--xl);
+}
+
+.gapy-xxl {
+  row-gap: var(--xxl);
+}
+
+
+/*GAP VERTICAL*/
+.gapx-xxs {
+  column-gap: var(--xxs);
+}
+
+.gapx-xs {
+  column-gap: var(--xs);
+}
+
+.gapx-s {
+  column-gap: var(--s);
+}
+
+.gapx-m {
+  column-gap: var(--m);
+}
+
+.gapx-l {
+  column-gap: var(--l);
+}
+
+.gapx-xl {
+columnw-gap: var(--xl);
+}
+
+.gapx-xxl {
+  column-gap: var(--xxl);
+}
