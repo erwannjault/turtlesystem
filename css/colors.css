@@ -17,10 +17,10 @@ p, li, blockquote {
 }
 
 .bg-secondary {
-  background-color: var(--color-Secondary);
+  background-color: var(--colorSecondary);
 }
 
-.bg-primary-transparent {
+.bg-primarytransparent {
   background-color : var(--colorPrimaryTransparent);
 }
 

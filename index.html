@@ -263,7 +263,7 @@
         L'élément Table permet de représenter un tableau de données possédant plusieurs dimensions.
       </p>
 
-      <table>
+      <table class="mb-s">
       <tr>
         <th>Un</th>
         <th>Deux</th>
@@ -297,28 +297,26 @@
 
 
     <h3 class="size-7 color-black">Exemple de code</h3>
-      <pre><code class="my-xxs">
-        &lt;table&gt;
-        &lt;tr&gt;
-          &lt;th>Un&gt;
-          &lt;th>Deux&gt;
-          &lt;th>Trois&gt;
-        &lt;/tr&gt;
+      <pre><code class="my-xxs">&lt;table&gt;
+&lt;tr&gt;
+  &lt;th>Un&gt;
+  &lt;th>Deux&gt;
+  &lt;th>Trois&gt;
+&lt;/tr&gt;
 
-        &lt;tr&gt;
-          &lt;td>Un&gt;
-          &lt;Deux&gt;
-          &lt;Trois&gt;
-        &lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td>Un&gt;
+  &lt;Deux&gt;
+  &lt;Trois&gt;
+&lt;/tr&gt;
 
-        &lt;tr&gt;
-          &lt;Un&gt;
-          &lt;Deux&gt;
-          &lt;Trois&gt;
-        &lt;/tr&gt;
+&lt;tr&gt;
+  &lt;Un&gt;
+  &lt;Deux&gt;
+  &lt;Trois&gt;
+&lt;/tr&gt;
 
-        &lt;/table&gt;
-  </code></pre>
+&lt;/table&gt;</code></pre>
 
 
 
@@ -341,7 +339,7 @@
         Le <span><code class="p-xxs">grid-auto-flow</code></span> est défini par défaut sur <span><code class="p-xxs">grid-auto-flow : dense</code></span>, ce qui permet le réagencement des items pour garder la grille le plus intacte possible, sans espacement étrange. Il suffit donc de créer un conteneur avec la classe .grid, mettre autant de div que l'on souhaite et le colonnage se fait tout seul.
       </p>
 <h4 class="color-blacktransparent size-7">.grid</h4>
-          <div class="grid mb-l">
+          <div class="grid mb-m">
             <div class="card p-m">
               <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
               <p>
@@ -406,7 +404,7 @@
           <p class="mb-l">Pour chaque item de la grid, vous pouvez renseigner le nombre de colonnes ou de lignes sur lesquelles vous souhaitez que l'item s'étende en utilisant sur sa balise les classes suivantes au choix :</p>
 
           <h4 class="color-blacktransparent size-7">.grid .grid-col-span-{nbDeColonnes}</h4>
-          <div class="grid grid-gap-m mb-s">
+          <div class="grid grid-gap-m mb-m">
             <div class="card p-m">
               <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
               <p>
@@ -532,7 +530,7 @@
 
 
     <h4 class="color-blacktransparent size-7">.grid .grid-row-span-{nbDeLignes}</h4>
-    <div class="grid grid-gap-m mb-s">
+    <div class="grid grid-gap-m mb-m">
       <div class="card p-m">
         <img class="mb-m" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px;"/>
         <p>
@@ -1246,7 +1244,7 @@ Insert your code here
 
                     <div class="flex mb-m">
                       <div class="bg-lightgrey">
-                      <div class="card mx-m my-l px-l py-m">
+                      <div class="card mx-m my-xl px-xl py-m">
                         Une Card avec des margins et paddings utilisant le plein potentiel du système de spacing du Turtle System
                       </div>
                     </div>
@@ -1279,8 +1277,72 @@ Insert your code here
                 <section class="card">
                     <h2 class="mb-s size-4">Couleurs & couleurs de fond</h2>
                     <p class="mb-l">
-                      Couleurs & couleurs de fond
+                      Le Turtle System vous permet simplement de styliser les couleurs de vos composants, quels qu'ils soient en leur ajoutant des classes. Comme toutes les classes présentes dans le framework, les classes de couleur sont construites ainsi : <span><code="p-xxs">.propriété-valeur</code></span>. Les propriétés pouvant être au choix : <span><code class="p-xxs">bg</code></span> ou <span><code class="p-xxs">color</code></span>. Les valeurs pouvant être au choix :
                     </p>
+                    <div class="flex">
+
+                      <div class="inline-flex flex-d-col flex-i-center" >
+                        <div style="height : 33px; max-width : 33px; width : 33px; border-radius : 3px;" class="card bg-primary mb-s"></div>
+                      <span><code class="p-xxs">primary</code></span>
+                    </div>
+                    <div class="inline-flex flex-d-col flex-i-center" >
+                      <div style="height : 33px; max-width : 33px; width : 33px; border-radius : 3px;" class="card bg-primarytransparent mb-s"></div>
+                    <span><code class="p-xxs">primarytransparent</code></span>
+                  </div>
+                  <div class="inline-flex flex-d-col flex-i-center" >
+                    <div style="height : 33px; max-width : 33px; width : 33px; border-radius : 3px;" class="card bg-secondary mb-s"></div>
+                  <span><code class="p-xxs">secondary</code></span>
+                </div>
+                <div class="inline-flex flex-d-col flex-i-center" >
+                  <div style="height : 33px; max-width : 33px; width : 33px; border-radius : 3px;" class="card bg-white mb-s"></div>
+                <span><code class="p-xxs">white</code></span>
+              </div>
+              <div class="inline-flex flex-d-col flex-i-center" >
+                <div style="height : 33px; max-width : 33px; width : 33px; border-radius : 3px;" class="card bg-lightgrey mb-s"></div>
+              <span><code class="p-xxs">lightgrey</code></span>
+            </div>
+            <div class="inline-flex flex-d-col flex-i-center" >
+              <div style="height : 33px; max-width : 33px; width : 33px; border-radius : 3px;" class="card bg-mediumgrey mb-s"></div>
+            <span><code class="p-xxs">mediumgrey</code></span>
+          </div>
+          <div class="inline-flex flex-d-col flex-i-center" >
+            <div style="height : 33px; max-width : 33px; width : 33px; border-radius : 3px;" class="card bg-darkgrey mb-s"></div>
+          <span><code class="p-xxs">darkgrey</code></span>
+        </div>
+        <div class="inline-flex flex-d-col flex-i-center" >
+          <div style="height : 33px; max-width : 33px; width : 33px; border-radius : 3px;" class="card bg-black mb-s"></div>
+        <span><code class="p-xxs">black</code></span>
+      </div>
+      <div class="inline-flex flex-d-col flex-i-center" >
+        <div style="height : 33px; max-width : 33px; width : 33px; border-radius : 3px;" class="card bg-blacktransparent mb-s"></div>
+      <span><code class="p-xxs">blacktransparent</code></span>
+    </div>
+</div>
+
+<p class="my-m mt-xl">
+Ainsi, si on souhaite changer la couleur d'une card pour qu'elle ait un fond de la couleur Primaire Transparent et une écriture Primaire, on ajoute les classes <span><code class="p-xxs">.bg-primarytransparent</code></span> à la card et <span><code class="p-xxs">.color-primary</code></span> au texte.
+
+<div class="flex flex-i-center width-75">
+  <div class="card p-m flex-grow-none">
+    <img class="mb-m" style="width : 200px;" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+    <p>
+      Card par défaut
+    </p>
+  </div>
+  <p class="text-a-center flex-grow-none">
+&rarr;
+  </p>
+  <div class="card p-m bg-primarytransparent flex-grow-none">
+    <img class="mb-m" style="width : 200px;" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" />
+    <p class="color-primary">
+      Card personnalisé
+    </p>
+  </div>
+</div>
+</p>
+
+                    </div>
+                    </div>
                   </section>
 
                   <section class="card">

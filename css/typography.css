@@ -84,3 +84,20 @@ b {
 i {
   font-style: italic;
 }
+
+.text-a-left {
+  text-align : left;
+}
+
+
+.text-a-center {
+  text-align : center;
+}
+
+.text-a-right {
+  text-align : right;
+}
+
+.text-a-justify {
+  text-align : justify;
+}
