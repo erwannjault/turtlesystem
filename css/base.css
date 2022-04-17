@@ -23,12 +23,6 @@ body {
   font-size : var(--size6);
 }
 
-/*Rendre flexible et adaptable les images*/
-img {
-display : block;
-max-width : 100%;
-height : auto;
-}
 
 .wrapper {
   max-width: 1200px;

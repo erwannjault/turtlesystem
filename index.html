@@ -1261,17 +1261,114 @@ Insert your code here
                 <p class="mb-l">
                   Personnaliser votre police.
                 </p>
+                <pre><code class="my-xxs">&lt;&gt;
+  --size1/2/3/4/5/6: Define the size of the typographie
+  &lt;&gt;</code></pre>
               </section>
 
               <section class="card">
                   <h2 class="mb-s size-4">Changer les couleurs du thème</h2>
-                  <p class="mb-l">
-                    Personnaliser votre police.
+                  <p class="mb-m">
+                    Avec le Turtle System, il vous suffit simplement de renseigner votre couleur en <i>HSL (Hue, Saturation, Luminance)</i> et le framework s'occupe du reste. Notre système vous permet de changer toutes les couleurs de l'interface en quelques secondes et calcule une palette graphique complète prête à l'emploi. Tous les composants d'interface sont déclinés à partir de la nuance que vous renseignez, des boutons, aux titres en passant par les champs de formulaire.
                   </p>
 
-              <pre><code class="my-xxs">&lt;&gt;
---size1/2/3/4/5/6: Define the size of the typographie
-&lt;&gt;</code></pre>
+                  <p class="mb-m">
+                    Pour changer votre couleur, rien de plus simple : rendez-vous dans la feuille de style <span class="bolder">css/variables.css</span> et changez les variables suivantes :
+                  </p>
+                  <div class="flex flex-w-nowrap">
+
+                  <ul class="card">
+                    <h3 class="mb-s size-5 color-blacktransparent">Variables</h3>
+                    <li class="mb-m bold">
+                      Primary<ul>
+                        <li style="margin-inline-start : var(--m);" class="regular my-s">
+                        <span><code class="p-xxs">--huePrimary</code></span>
+                      </li>
+                      <li style="margin-inline-start : var(--m);" class="regular mb-s">
+                      <span><code class="p-xxs">--saturationPrimary</code></span>
+                    </li>
+                    <li style="margin-inline-start : var(--m);" class="regular mb-s">
+                    <span><code class="p-xxs">--luminancePrimary</code></span>
+                  </li>
+                    </ul>
+                    </li>
+                    <li class="mb-m bold">
+                      Secondary
+                      <ul>
+                        <li style="margin-inline-start : var(--m);" class="regular my-s">
+                        <span><code class="p-xxs">--hueSecondary</code></span>
+                      </li>
+                      <li style="margin-inline-start : var(--m);" class="regular mb-s">
+                      <span><code class="p-xxs">--saturationSecondary</code></span>
+                    </li>
+                    <li style="margin-inline-start : var(--m);" class="regular mb-s">
+                    <span><code class="p-xxs">--luminanceSecondary</code></span>
+                  </li>
+                    </ul>
+                  </li><li class="mb-m bold">
+                      Grey<ul>
+                        <li style="margin-inline-start : var(--m);" class="regular my-s">
+                        <span><code class="p-xxs">--saturationGrey</code></span>
+                      </li>
+
+                    </ul>
+                    </li>
+                  </ul>
+
+                  <div class=" card flex flex-d-col">
+                    <h3 class="mb-s size-5 color-blacktransparent">Exemple</h3>
+                    <div class="flex">
+                      <img src="img/theme-color-default.png" class="flex-grow-none" style="width: 38px; height: 38px; max-width: 38px;"/>
+                      <ul>
+                        <li>
+                          <span><code class="p-xxs">--huePrimary</code></span> : 148;
+                        </li>
+                        <li>
+                          <span><code class="p-xxs">--saturationPrimary</code></span> : 100%;
+                        </li>
+                        <li>
+                          <span><code class="p-xxs">--luminancePrimary</code></span> : 40%;
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="text-a-center">
+                      &darr;
+                    </p><div class="flex">
+                      <img src="img/theme-color-perso.png" class="flex-grow-none" style="width: 38px; height: 38px; max-width: 38px;"/>
+                      <ul>
+                        <li>
+                          <span><code class="p-xxs">--huePrimary</code></span> : 338;
+                        </li>
+                        <li>
+                          <span><code class="p-xxs">--saturationPrimary</code></span> : 93%;
+                        </li>
+                        <li>
+                          <span><code class="p-xxs">--luminancePrimary</code></span> : 50%;
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class=" card flex flex-d-col flex-j-start">
+                    <h3 class="mb-s size-5 color-blacktransparent flex-grow-none">Boutons</h3>
+                    <div class="flex flex-d-col flex-grow-none">
+                      <img src="img/theme-button-default-default.png" style="height: 40px; object-fit: scale-down;"/>
+                      <img src="img/theme-button-default-hover.png" style="height: 40px; object-fit: scale-down;"/>
+                      <img src="img/theme-button-default-active.png" style="height: 40px; object-fit: scale-down;"/>
+                    </div>
+                    <p class="text-a-center flex-grow-none">
+                      &darr;
+                    </p><div class="flex flex-d-col flex-grow-none">
+                      <img src="img/theme-button-perso-default.png" style="height: 40px; object-fit: scale-down;"/>
+                      <img src="img/theme-button-perso-hover.png" style="height: 40px; object-fit: scale-down;"/>
+                      <img src="img/theme-button-perso-active.png" style="height: 40px; object-fit: scale-down;"/>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+
                 </section>
 
                 <section class="card">
