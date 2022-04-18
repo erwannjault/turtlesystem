@@ -17,21 +17,21 @@
         <li class="p-s">
           <li class="deroulant"><a href="#">Documentations</a>
             <ul class="sous">
-              <li><a href="#">Typographie</a></li>
-              <li><a href="#">Boutons</a></li>
-              <li><a href="#">Blockquote</a></li>
-              <li><a href="#">Listes</a></li>
-              <li><a href="#">Formulaire</a></li>
-              <li><a href="#">Tableau</a></li>
-              <li><a href="#">Grid</a></li>
-              <li><a href="#">Flexbox</a></li>
-              <li><a href="#">Code</a></li>
-              <li><a href="#">Utilities</a></li>
-              <li><a href="#">Spacing</a></li>
-              <li><a href="#">Personnaliser votre police</a></li>
-              <li><a href="#">Changer les couleurs du thème</a></li>
-              <li><a href="#">Couleurs & couleurs de fond</a></li>
-              <li><a href="#">Installation</a></li>
+              <li><a href="#typography">Typographie</a></li>
+              <li><a href="#boutons">Boutons</a></li>
+              <li><a href="#blockquote">Blockquote</a></li>
+              <li><a href="#list">Listes</a></li>
+              <li><a href="#formulaire">Formulaire</a></li>
+              <li><a href="#tableau">Tableau</a></li>
+              <li><a href="#grid">Grid</a></li>
+              <li><a href="#flexbox">Flexbox</a></li>
+              <li><a href="#Code">Code</a></li>
+              <li><a href="#utilities">Utilities</a></li>
+              <li><a href="#spacing">Spacing</a></li>
+              <li><a href="#police">Personnaliser votre police</a></li>
+              <li><a href="#couleurs">Changer les couleurs du thème</a></li>
+              <li><a href="#c_background">Couleurs & couleurs de fond</a></li>
+              <li><a href="#installation">Installation</a></li>
             </ul>
           </li>
         </li>
@@ -42,35 +42,6 @@
 
     </div>
   </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <main class="wrapper" id="documentation">
 
@@ -101,7 +72,7 @@
     </section>
 
 
-    <section class="card">
+    <section class="card" id="typography">
       <h2 class="mb-s size-4">Typographie</h2>
       <p class="mb-l">
         En utilisant l'unité rem dans le framework, nous avons créé une échelle typographique qui peut être modifié en changeant simplement la taille de l'unité de base dans l'élément root. La typographie actuelle a une base de 1.6rem soit 16px.
@@ -145,7 +116,7 @@
     </section>
 
 
-    <section class="card">
+    <section class="card" id="boutons">
       <h2 class="mb-s size-4">Boutons</h2>
       <p class="mb-l">
         Le bouton est un des éléments d'interface les plus importants. Sur le Turtle System, il existe quatre styles : le style solide par défaut, <span><code class="p-xxs">outline</code></span>, <span><code class="p-xxs">ghost</code></span> ainsi que <span><code class="p-xxs">disabled</code></span>.
@@ -227,7 +198,7 @@
       <pre><code class="my-xxs">&lt;a class="btn btn-primary" href="#"&gt;Primary Button&lt;/a&gt;</code></pre>
     </section>
 
-    <section class="card">
+    <section class="card" id="blockquote">
       <h2 class="mb-s size-4">Blockquote</h2>
       <p class="mb-l">
         Le blockquote est une section reprenant une citation d'une autre source.
@@ -240,7 +211,7 @@
       <pre><code class="my-xxs">&lt;blockquote&gt;Citation courte ou longue.&lt;/blockquote&gt;</code></pre>
     </section>
 
-    <section class="card">
+    <section class="card" id="list">
       <h2 class="mb-s size-4">Listes</h2>
       <p class="mb-l">
         Les éléments ul, ol et dl permettent d'afficher des listes d'informations et de données. L'élément ul est affiché avec des cercles avant chaque item de la liste. L'élement ol est affiché avec des nombres avant chaque item de la liste.
@@ -291,7 +262,7 @@
 &lt;/dl&gt;</code></pre>
     </section>
 
-    <section class="card">
+    <section class="card" id="formulaire">
       <h2 class="mb-s size-4">Formulaire</h2>
       <p class="mb-l">
     L'élément Form permet de créer un formulaire avec des éléments interactifs, donnant la possibilité à l'utilisateur de fournir des informations.
@@ -330,7 +301,7 @@
 
     </section>
 
-    <section class="card">
+    <section class="card" id="tableau">
       <h2 class="mb-s size-4">Tableau</h2>
       <p class="mb-l">
         L'élément Table permet de représenter un tableau de données possédant plusieurs dimensions.
@@ -396,7 +367,7 @@
 
     </section>
 
-    <section class="card">
+    <section class="card" id="grid">
         <h2 class="mb-s size-4">Grid</h2>
         <p class="mb-l">
           Grid est un outil puissant, permettant de gérer des affichages en colonnage simplement. Pour le framework Turtle System, nous avons opté pour un système de grille flexible mettant à profit les unités  <span><code class="p-xxs">fr</code></span>, la fonction  <span><code class="p-xxs">repeat</code></span> ainsi les attributs <span><code class="p-xxs">minmax()</code></span> et <span><code class="p-xxs">auto-fit</code></span> . Cela permet de gérer l'adaptation aux différents supports sans media queries. Ainsi, pour mettre un container en <span><code class="p-xxs">display : grid;</code></span>, il suffit de lui attriber la class <span><code class="p-xxs">.grid</code></span> et il hérite de la stylisation suivante :
@@ -812,7 +783,7 @@ Card
 
       </section>
 
-      <section class="card">
+      <section class="card" id="flexbox">
           <h2 class="mb-s size-4">Flexbox</h2>
           <p class="mb-l">
             Flexbox CSS permet de structurer, aligner et distribuer l'espace au sein d'un conteneur donné. Il est davantage destiné aux layouts à petite échelle contrairement à Grid.
@@ -1066,7 +1037,7 @@ Card
 
         </section>
 
-      <section class="card">
+      <section class="card" id="code">
           <h2 class="mb-s size-4">Code</h2>
           <p class="mb-l">
             La balise Code permet de faire apparaitre un morceau du code afin de le mettre en évidence dans une quote de fond grisé.
@@ -1078,7 +1049,7 @@ Insert your code here
 
         </section>
 
-        <section class="card">
+        <section class="card" id="utilities">
             <h2 class="mb-s size-4">Utilities</h2>
             <p class="mb-l">
               Les Utilities sont des classes vous permettant de gérer la position de vos éléments, leur largeur, leur hauteur et la façon dont ils s'affichent. Ainsi, les classes suivantes sont applicables sur tout élément HTML :
@@ -1178,7 +1149,7 @@ Insert your code here
           </section>
 
 
-          <section class="card">
+          <section class="card" id="spacing">
               <h2 class="mb-s size-4">Spacing</h2>
               <p class="mb-m">
                 Les classes de <i>spacing</i> ou d'espacement permettent de gérer les marges internes et externes entre vos différents composants d'interface. Ils sont construits ainsi : <span><code class="p-xxs">type de marge</code></span> <span><code class="p-xxs">axe ou position</code></span>-<span><code class="p-xxs">valeur de la marge</code></span>. </p>
@@ -1329,7 +1300,7 @@ Insert your code here
             </section>
 
 
-            <section class="card">
+            <section class="card" id="police">
                 <h2 class="mb-s size-4">Personnaliser votre police</h2>
                 <p class="mb-l">
                   Personnaliser votre police.
@@ -1339,7 +1310,7 @@ Insert your code here
   &lt;&gt;</code></pre>
               </section>
 
-              <section class="card">
+              <section class="card" id="couleurs">
                   <h2 class="mb-s size-4">Changer les couleurs du thème</h2>
                   <p class="mb-m">
                     Avec le Turtle System, il vous suffit simplement de renseigner votre couleur en <i>HSL (Hue, Saturation, Luminance)</i> et le framework s'occupe du reste. Notre système vous permet de changer toutes les couleurs de l'interface en quelques secondes et calcule une palette graphique complète prête à l'emploi. Tous les composants d'interface sont déclinés à partir de la nuance que vous renseignez, des boutons, aux titres en passant par les champs de formulaire.
@@ -1444,7 +1415,7 @@ Insert your code here
 
                 </section>
 
-                <section class="card">
+                <section class="card" id="c_background">
                     <h2 class="mb-s size-4">Couleurs & couleurs de fond</h2>
                     <p class="mb-l">
                       Le Turtle System vous permet simplement de styliser les couleurs de vos composants, quels qu'ils soient en leur ajoutant des classes. Comme toutes les classes présentes dans le framework, les classes de couleur sont construites ainsi : <span><code="p-xxs">.propriété-valeur</code></span>. Les propriétés pouvant être au choix : <span><code class="p-xxs">bg</code></span> ou <span><code class="p-xxs">color</code></span>. Les valeurs pouvant être au choix :
@@ -1515,7 +1486,7 @@ Ainsi, si on souhaite changer la couleur d'une card pour qu'elle ait un fond de 
                     </div>
                   </section>
 
-                  <section class="card">
+                  <section class="card" id="installation">
                       <h2 class="mb-s size-4">Installation</h2>
                       <p class="mb-l">
                         Couleurs & couleurs de fond
