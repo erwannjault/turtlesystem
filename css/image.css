@@ -1,7 +1,7 @@
 /*MADE BY HUGO*/
 
 /*Rendre flexible et adaptable les images*/
-img {
+img, svg {
 display : block;
 max-width : 100%;
 height : auto;
