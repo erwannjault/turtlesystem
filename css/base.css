@@ -14,6 +14,7 @@ font-family : var(--fontFamily), 'Roboto', 'Helvetica', 'Arial', sans-serif;
 line-height : 1.5;
 background-color : var(--colorLightGrey);
 color : var(--colorBlackTransparent);
+scroll-behavior: smooth;
 }
 
 
@@ -22,18 +23,17 @@ body {
   font-size : var(--size6);
 }
 
-/*Rendre flexible et adaptable les images*/
-img {
-display : block;
-max-width : 100%;
-height : auto;
-}
 
 .wrapper {
   max-width: 1200px;
   margin: auto;
 }
 
+@media screen and (max-width: 1280px){
+  .wrapper {
+    max-width: 95%;
+  }
+}
 
 nav * {
   display: inherit;

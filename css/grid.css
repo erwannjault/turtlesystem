@@ -4,9 +4,10 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: var(--m);
   grid-template-rows : min-content;
+  grid-auto-flow: dense;
 }
 
-/*SPAN ROW*/
+/*COLUMN ROW*/
 .grid-col-span-one {
 grid-column: span 1;
 }

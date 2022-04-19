@@ -19,7 +19,7 @@ code span {
 
 span code {
   display: inline-block;
-  width : inherit;
+  width : fit-content;
 }
 
 code.p-xxs {
