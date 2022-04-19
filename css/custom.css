@@ -13,3 +13,11 @@ main#documentation>.card {
 nav {
   border-bottom : 1px solid var(--colorMediumGrey);
 }
+
+svg.icon > path {
+  fill : var(--colorPrimary)
+}
+
+svg > path[fill="#00cc5f"], svg > circle[fill="#00cc5f"], svg > rect[fill="#00cc5f"]{
+    fill : var(--colorPrimary)
+}
