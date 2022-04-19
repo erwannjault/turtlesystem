@@ -15,6 +15,7 @@ line-height : 1.5;
 background-color : var(--colorLightGrey);
 color : var(--colorBlackTransparent);
 scroll-behavior: smooth;
+scroll-padding-top: 9.6rem;
 }
 
 
