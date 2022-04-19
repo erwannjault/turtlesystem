@@ -25,3 +25,7 @@ span code {
 code.p-xxs {
   border : none;
 }
+
+pre {
+  white-space: pre-wrap;
+}
