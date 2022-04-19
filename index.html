@@ -35,6 +35,7 @@
               <li><a href="#utilities">Utilities</a></li>
               <li><a href="#grid">Grid</a></li>
               <li><a href="#flexbox">Flexbox</a></li>
+              <li><a href="#special">Classes spéciales</a></li>
               <li><a href="#boutons">Boutons</a></li>
               <li><a href="#formulaire">Formulaire</a></li>
               <li><a href="#tableau">Tableau</a></li>
@@ -1315,6 +1316,72 @@ Line-heights
 
             </section>
 
+      <section class="card" id="special">
+            <h2 class="mb-s size-4">Classes spéciales</h2>
+            <div class="grid">
+              <div class="card grid-row-span-two">
+                <h3 class="mb-s size-5 color-blacktransparent">Card</h2>
+              <p>Les cards vous permettent de grouper des éléments visuellement simplement en les englobant de la balise de votre choix, dotée de la classe <span><code class="p-xxs">.card</code></span>. Toutes les sections de la documentation bénéficient de la classe <span><code class="p-xxs">.card</code></span></p>
+
+              <h3 class="size-7 color-blacktransparent mt-m mb-xs">Exemple de card</h3>
+              <div class="card p-m">
+                <img class="mb-m width-100" src="https://images.photowall.com/products/50295/sea-turtle-in-coral.jpg?h=699&q=85" style="height:200px; border-radius : 4px;"/>
+                <h4 class="size-5">Titre</h4>
+                <p>
+                  Paragraphe - Exemple de card
+                </p>
+
+
+            </div>
+
+            <h3 class="size-7 color-blacktransparent mt-m mb-xs">Exemple de code</h3>
+            <pre><code>&lt;div class=&quot;card&quot;&gt;
+  &lt;img src=&quot;IMG.png&quot;/&gt;
+  &lt;h4&gt;Titre&lt;/h4&gt;
+  &lt;p&gt;
+    Paragraphe - Exemple de card
+  &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+            </div>
+              <div class="card">
+                <h3 class="mb-s size-5 color-blacktransparent">Dropdown</h2>
+                  <p>Besoin d'un dropdown ? Copiez-collez le code ci-dessous :</p>
+
+<nav class="inline-flex">
+  <ul>
+    <li class="dropdown flex-i-center"><a href="#">Dropdown Menu</a>
+        <ul class="dropdown-sub">
+          <li><a href="#ID1">Sub-item 01</a></li>
+          <li><a href="#ID2">Sub-item 02</a></li>
+          <li><a href="#ID3">Sub-item 03</a></li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+                  <h3 class="size-7 color-blacktransparent my-s">Exemple de code</h3>
+                  <pre><code>&lt;nav class=&quot;inline-flex&quot;&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;dropdown flex-i-center&quot;&gt;&lt;a href=&quot;#&quot;&gt;Dropdown Menu&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-sub&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#ID1&quot;&gt;Sub-item 01&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#ID2&quot;&gt;Sub-item 02&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#ID3&quot;&gt;Sub-item 03&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+
+
+              <div class="card" style="grid-row : 2; grid-column : 2;">
+                <h3 class="mb-s size-5 color-blacktransparent">Wrapper</h2>
+                  <p>La classe <span><code class="p-xxs">.wrapper</code></span> permet de contraindre le contenu par une largeur maximale de 1200px, en l'appliquant à une balise englobant votre contenu. Toute la documentation du Turtle System est contenue dans une balise <span><code class="p-xxs">&lt;main&gt;</code></span> portant cette classe, ce qui permet de la centrer joliment. Le wrapper est donc un container global, centrant son contenu et contraignant sa largeur maximale (modifiable en ouvrant puis en éditant le fichier <span><code class="p-xxs"><img src="img/install-file.svg" class="inline pr-xs" style="height : 1.6rem; position: relative; top: 0.3rem;">css/base.css</code></span>) </p>
+              </div>
+            </div>
+
+                      </section>
     <section class="card" id="boutons">
       <h2 class="mb-s size-4">Boutons</h2>
       <p class="mb-l">
@@ -1585,6 +1652,7 @@ Insert your code here
 &lt;/code&gt;</code></pre>
       </h3>
         </section>
+
 
   </main>
 </body>
