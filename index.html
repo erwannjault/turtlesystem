@@ -1036,11 +1036,11 @@ Card
           <p class="mb-l">
             La balise Code permet de faire apparaitre un morceau du code afin de le mettre en évidence dans une quote de fond grisé.
           </p>
-
+      <h3 class="size-7 color-black">Exemple de code</h3>
           <pre><code class="my-xxs">&lt;code&gt;
 Insert your code here
 &lt;/code&gt;</code></pre>
-
+      </h3>
         </section>
 
         <section class="card" id="utilities">
@@ -1297,15 +1297,40 @@ Insert your code here
             <section class="card" id="police">
                 <h2 class="mb-s size-4">Personnaliser votre police</h2>
                 <p class="mb-l">
-                  Personnaliser votre police.
+                  Personnaliser votre police en indiquant une <span><code class="p-xxs">size</code></span> qui correspond à sa taille, une <span><code class="p-xxs">heigt</code></span> qui correspond à sa graisse, ainsi que les <span><code class="p-xxs">lineHeigtLarge</code></span> et <span><code class="p-xxs">lineHeightSmall</code></span> qui correspondent à la hauteur de la ligne.
                 </p>
-                <pre><code class="my-xxs">&lt;&gt;
-  --size1/2/3/4/5/6: Define the size of the typographie
-  &lt;&gt;</code></pre>
+
+      <h3 class="size-7 color-black">Exemple de code</h3>
+                <pre><code class="my-xxs">Size of typography :
+
+  --size1: 4.6rem;
+  --size2: 3.6rem;
+  --size3: 2.8rem;
+  --size4: 2.2rem;
+  --size5: 1.8rem;
+  --size6: 1.6rem;
+  --size7: 1.2rem;
+
+Weight of typography :
+
+  --lighter: 200;
+  --light: 300;
+  --regular: 400;
+  --bold: 600;
+  --bolder: 800;
+
+Lineheight of typography :
+
+  --lineHeightLarge: 1.5;
+  --lineHeightSmall: 1.25;
+</code></pre>
+      </h3>
+
               </section>
 
               <section class="card" id="couleurs">
                   <h2 class="mb-s size-4">Changer les couleurs du thème</h2>
+                
                   <p class="mb-m">
                     Avec le Turtle System, il vous suffit simplement de renseigner votre couleur en <i>HSL (Hue, Saturation, Luminance)</i> et le framework s'occupe du reste. Notre système vous permet de changer toutes les couleurs de l'interface en quelques secondes et calcule une palette graphique complète prête à l'emploi. Tous les composants d'interface sont déclinés à partir de la nuance que vous renseignez, des boutons, aux titres en passant par les champs de formulaire.
                   </p>
@@ -1405,7 +1430,6 @@ Insert your code here
                   </div>
 
                 </div>
-
 
                 </section>
 
