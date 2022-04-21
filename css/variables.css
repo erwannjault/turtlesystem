@@ -1,23 +1,31 @@
 /*MADE BY ERWANN*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
+/*FONT IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+
 :root {
-  /*DEFINE THE FONT FAMILY*/
+  /*FONT SWAPPING*/
+  /*Define the font family*/
   --fontFamily: Poppins;
-  /*DEFINE THE HUE OF THE PRIMARY AND SECONDARY COLORS*/
+
+
+  /*COLOR SYSTEM*/
+  /*Define the hue of the primary and secondary colors*/
   --huePrimary: 148;
   --hueSecondary: 248;
-  /*DEFINE THE SATURATION OF THE PRIMARY AND SECONDARY COLORS*/
+  /*Define the saturation of the primary and secondary colors*/
   --saturationPrimary: 100%;
   --saturationSecondary: 100%;
   --saturationGrey: 7%;
-  /*DEFINE THE LUMINANCE OF THE PRIMARY AND SECONDARY COLORS*/
+  /*Define the luminance of the primary and secondary colors*/
   --luminancePrimary: 40;
   --luminanceSecondary: 50;
-  /*DEFINE A BASE THAT THE FRAMEWORK WILL WORK WITH */
+  /*Define base colors the framework will work with*/
   --basePrimary: var(--huePrimary), var(--saturationPrimary);
   --baseSecondary: var(--hueSecondary), var(--saturationSecondary);
   --baseGrey: var(--huePrimary), var(--saturationGrey);
-  /*DEFINE THE COLOR PALETTE AND THE GREY PALETTE AND THEIR LUMINANCE*/
+  /*Define the color palette and the grey palette and their luminance*/
   --colorPrimary: hsl(var(--basePrimary), calc(var(--luminancePrimary)*1%));
   --colorPrimaryTransparent:  hsla(var(--basePrimary), calc(var(--luminancePrimary)*1%), 0.15);
   --colorSecondary: hsl(var(--baseSecondary), calc(var(--luminanceSecondary)*1%));
@@ -28,12 +36,14 @@
   --colorLightGrey: hsl(var(--baseGrey), 96%);
   --colorMediumGrey: hsl(var(--baseGrey), 91%);
   --colorDarkGrey: hsl(var(--baseGrey), 86%);
-  /*DEFINE THE VARIOUS STATES*/
+  /*Define the various states*/
   --colorPrimaryHover: hsl(var(--basePrimary), calc((var(--luminancePrimary) - 10) * 1%));
   --colorPrimaryActive: hsl(var(--basePrimary), calc((var(--luminancePrimary) - 20) * 1%));
   --colorSecondaryHover: hsl(var(--baseSecondary), calc((var(--luminanceSecondary) - 10) * 1%));
   --colorSecondaryActive: hsl(var(--baseSecondary), calc((var(--luminanceSecondary) - 20) * 1%));
-  /*DEFINE THE POTENTIAL USABLE UNITS*/
+
+  /*SPACING*/
+  /*Define the potential usable units*/
   --xxs: 0.2rem;
   --xs: 0.4rem;
   --s: 0.8rem;
@@ -41,13 +51,15 @@
   --l: 2.4rem;
   --xl: 4rem;
   --xxl: 8rem;
-  /*DEFINE THE FONT WEIGHTS*/
+
+  /*TYPOGRAPHY*/
+  /*Define the font weights*/
   --lighter: 200;
   --light: 300;
   --regular: 400;
   --bold: 600;
-  --bolder: 800;
-  /*DEFINE THE TYPOGRAPHY VARIABLES*/
+  --bolder: 700;
+  /*Define the typography size variables*/
   --size1: 4.6rem;
   --size2: 3.6rem;
   --size3: 2.8rem;
@@ -55,9 +67,12 @@
   --size5: 1.8rem;
   --size6: 1.6rem;
   --size7: 1.2rem;
+/*Define the line-height variables*/
   --lineHeightLarge: 1.5;
   --lineHeightSmall: 1.25;
-  /*DEFINE THE MISCELLANEOUS ELEMENTS*/
+
+  /*MISCELLANEOUS*/
+  /*Define the miscellaneous elements*/
   --borderRadius: .8rem;
   --transitionTiming: color 200ms, background 200ms, border 200ms cubic-bezier(0.75, 0, 0.25, 1);
 }

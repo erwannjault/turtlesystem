@@ -3,5 +3,25 @@
 /*A BLANK CANVAS FOR YOU TO CREATE YOUR OWN CLASSES AND RULES*/
 
 .icon {
-  width : var(--xl);
+  width : 16.0rem;
+}
+
+main#documentation>.card {
+  margin : var(--m) 0;
+}
+
+nav {
+  border-bottom : 1px solid var(--colorMediumGrey);
+}
+
+main nav {
+  border : none;
+}
+
+svg.icon > path {
+  fill : var(--colorPrimary)
+}
+
+svg > path[fill="#00cc5f"], svg > circle[fill="#00cc5f"], svg > rect[fill="#00cc5f"]{
+    fill : var(--colorPrimary)
 }

@@ -1,6 +1,9 @@
 /*MADE BY HUGO*/
-img{
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
+
+/*Rendre flexible et adaptable les images*/
+img, svg {
+display : block;
+max-width : 100%;
+height : auto;
+object-fit : cover;
 }

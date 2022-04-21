@@ -51,28 +51,53 @@ p, ol, ul, dl,  input, textarea, .body-standard {
 
 input, textarea {
   font-family: var(--fontFamily), Arial, sans-serif;}
-  
+
 .body-small{
   font-size : var(--size7);
   line-height : var(--lineHeightLarge);
 }
 
 .lighter {
-  font-weight : 200;
+  font-weight : var(--lighter);
 }
 
 .light {
-  font-weight : 300;
+  font-weight : var(--light);
 }
 
 .regular {
-  font-weight : 400;
+  font-weight : var(--regular);
 }
 
 .bold {
-  font-weight : 600;
+  font-weight : var(--bold);
 }
 
 .bolder {
-  font-weight : 800;
+  font-weight : var(--bolder);
+}
+
+b {
+  font-weight : bold;
+}
+
+i {
+  font-style: italic;
+}
+
+.text-a-left {
+  text-align : left;
+}
+
+
+.text-a-center {
+  text-align : center;
+}
+
+.text-a-right {
+  text-align : right;
+}
+
+.text-a-justify {
+  text-align : justify;
 }

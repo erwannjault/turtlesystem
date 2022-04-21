@@ -8,13 +8,14 @@ textarea {
   width: 100%;
   border: 1px solid #ccc;
   background: white;
-  margin: 0 0 5px;
-  padding: 10px;
+  margin: 0 0 var(--xs);
+  padding: 1.2rem;
+  border-radius: var(--borderRadius);
 }
 
 
 fieldset {
-  margin: 0 0 10px;
+  margin: 0 0 var(--s);
   min-width: 100%;
   padding: 0;
   width: 100%;
@@ -27,26 +28,37 @@ textarea {
   resize: none;
 }
 
-button[type="submit"] {
+button[type="submit"]  {
+  background-color: var(--colorPrimary);
+  border: .1rem solid var(--colorPrimary);
+  border-radius: var(--borderRadius);
+  color: white;
   cursor: pointer;
-  width: 100%;
-  border: none;
-  background: var(--colorPrimary);
-  color: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  font-size: 15px;
-}
+  display: inline-block;
+  font-size: var(--size7);
+  font-weight: 700;
+  letter-spacing: .1rem;
+  line-height: 3.8rem;
+  padding: 0 var(--l);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: var(--transitionTiming);
+  font-family : font-family : var(--fontFamily), 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  width : 100%;
+  }
 
 button[type="submit"]:hover {
   background: var(--colorPrimaryHover);
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: var(--transitionTiming);
+  -moz-transition: var(--transitionTiming);
+  transition: var(--transitionTiming);
 }
 
 button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px var(--colorPrimaryHover);
+  background : var(--colorPrimaryActive);
+  transition: var(--transitionTiming);
 }
 
 .copyright {
@@ -58,5 +70,3 @@ textarea:focus {
   outline: 0;
   border: 1px solid #aaa;
 }
-=======
-
